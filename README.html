@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Millimar Software C1202</title>
+        <style>
+</style>
+        
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/markdown.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/highlight.css">
+<style>
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif;
+                font-size: 14px;
+                line-height: 1.6;
+            }
+        </style>
+        <style>
+.task-list-item { list-style-type: none; } .task-list-item-checkbox { margin-left: -20px; vertical-align: middle; }
+</style>
+        
+        
+        
+    </head>
+    <body class="vscode-body vscode-light">
+        <h1 id="millimar-software-c1202">Millimar Software C1202</h1>
+<p>FW ver 0.7.8.7 / 13.04.2021: (datei unterladen: <a href="//goefs01/Mahr-Gruppe/Benutzergruppen/Transfer%20ENTW/Esslingen/C1202/Firmware/0.7.8.7/C1202.bin">C1202.bin</a> )</p>
+<ul>
+<li>Erste start verbessert und optimiert: Zeitenm, artikelnummer und seriennummer richtig eingestellt</li>
+<li>eerpom erase moeglich um Erst Start zu simulieren</li>
+</ul>
+<p>FW ver 0.7.8.6A / 13.04.2021: (datei unterladen: <a href="//goefs01/Mahr-Gruppe/Benutzergruppen/Transfer%20ENTW/Esslingen/C1202/Firmware/0.7.8.6A/C1202.bin">C1202.bin</a> )</p>
+<ul>
+<li>Neu Font fuer 32-pixel gross Fett (Font32B). bentzt in Formel -&gt; Funktion. Chinesischbuchstaben und Sonderzeichen fuer ander sprachen in menu verfueggbar (&quot;keine&quot; und &quot;Mittelwert&quot;)</li>
+<li><strong>Sprachen</strong> Tschechisch und Franzoesisch korrigiert</li>
+<li><strong>bug fix</strong> ID 45804 (Menu sperre) korrigiert</li>
+<li><strong>SD</strong> parameter uebertragung ueber marcom schnittstelle</li>
+<li>bugfix - 2Pmeister, first start of Nominal - plausibility check run unnecessary and cause problems</li>
+</ul>
+<p>FW ver 0.7.8.6 / 09.04.2021: (datei unterladen: <a href="//goefs01/Mahr-Gruppe/Benutzergruppen/Transfer%20ENTW/Esslingen/C1202/Firmware/0.7.8.6/C1202.bin">C1202.bin</a> )</p>
+<ul>
+<li><strong>SD Karte</strong> dynamische detektion in menu</li>
+<li><strong>SD Karte</strong> Name bearbeitung - abkuerzung fuer 6-Buchstaben</li>
+<li><strong>Modul programieren</strong> vebesseung:
+<ul>
+<li>Antwortzeit verbessert</li>
+<li>Menu Texte und Titel angepasst fuer verschiedene Sprachen</li>
+<li>Chinesiche Sprache programierung moeglich</li>
+</ul>
+</li>
+<li><strong>Parameter verwalten</strong> vebesserung:
+<ul>
+<li>Antwortzeit verbessert</li>
+<li>Menu Texte und Titel angepasst fuer verschiedene Sprachen</li>
+<li>datei namen liste verbessert, max laenge fuer Dateiname ist 14 total (10-vorkomma Zeichen plus Extension)</li>
+<li>maximale datei liste laenge bis 24 erweitert, 6x4</li>
+<li><strong>Dateiname editierung</strong> bei speicher moeglich: 6 stellen + 2-stelige automatische Zahl, z.B parame01.par.
+moegliche Zeichen: [a-z][0-9][-][_]</li>
+<li>Speicherikone anpassung wenn keine karte oder kein freies Paltz mehr ist</li>
+<li>Firmware Version in parmaterer datei im erste stelle zugefuegt</li>
+<li>algemeine verbesserungen</li>
+</ul>
+</li>
+<li><strong>MarCom</strong> - Seriennummer einstellung - minmal wert pruefung</li>
+<li><strong>Sprachen update</strong>: SE, RU, CN, IT, PT, SW, EN, DE (8), bleibt noch Tschechisc, Franzoesisch und Spanisch</li>
+<li>Sprchewechsel verbesserung fuer <strong>Formel</strong></li>
+<li><strong>Listenanzeige</strong> verbesserung</li>
+<li><strong>Winkelaufloesung verbessuerng</strong> - chinesische Namen - Radian war nicht richtig gezeigt in Kanji</li>
+<li><strong>Kein messmodul</strong> - verstekte Funktion - Taste 1 Langdruck - moeglich ins menu zu gehen um z.B. falshgeflaeschte modul neu zu Falshen.</li>
+<li>Schnittstelle fuer <strong>automatische tests</strong> (Reset, Tasten, screenschot, Home, FS, Parameter Laden)</li>
+</ul>
+<p>FW ver 0.7.8.5 / 30.03.2021: (datei unterladen: <a href="//goefs01/Mahr-Gruppe/Benutzergruppen/Transfer%20ENTW/Esslingen/C1202/Firmware/0.7.8.5/C1202.bin">C1202.bin</a> )</p>
+<ul>
+<li>Fix Fussschaluter parallel daten senden, auch Tasten</li>
+<li>Farbe fuer Teksttaste nach Modul Update und Kuundenkalibrierung</li>
+<li>Modul Update moeglich nach bestaetigung - neu Bestaetuigungsfenster</li>
+<li>Parameterverwalten: Parameter laden und loeschen nach bestaetigung - neu Bestaetigungsfenster</li>
+<li>Sprache verbesserungen in Woerterbuch und laengeanpassung, besonderes in Kundenkorrektur (kurz fuer Kunden- und Firmenkorrektur aktivirung).</li>
+<li>neue Woerte fuer Bestaetigubngsfenstern</li>
+</ul>
+<p>FW ver 0.7.8.4D / 24.03.2021: (datei unterladen: <a href="//goefs01/Mahr-Gruppe/Benutzergruppen/Transfer%20ENTW/Esslingen/C1202/Firmware/0.7.8.4D/C1202.bin">C1202.bin</a> )</p>
+<ul>
+<li>Fix, Seriennummer editierung fuer MarCom (auch Produktionwerkzeug)</li>
+<li>Sprache Polsnisch korrigiert (nach empfehlung Mahr Polska)</li>
+<li>Fix, Parameteranzeige wenn Einheit und Anzahl Meister gaeendert un nachdem Funktion &quot;atan&quot; nach nicht-&quot;atan&quot; korrigiert</li>
+<li>Lange Liste Scroll verbessert z.B Sprache.</li>
+</ul>
+<p>FW ver 0.7.8.4C / 24.03.2021: (datei unterladen: <a href="//goefs01/Mahr-Gruppe/Benutzergruppen/Transfer%20ENTW/Esslingen/C1202/Firmware/0.7.8.4C/C1202.bin">C1202.bin</a> )</p>
+<ul>
+<li>Sprachen wechsel verbessert (geschwidigkeit und zuferlaessigkeit)</li>
+<li>Marcom inch antwort runden korrigiert fuer HR modul</li>
+<li>Aktuelle Merkmal anzeige &quot;hand&quot; gaendert</li>
+<li>2P-meister plausibilitaet pruefung verbeserung (extreme werte und nicht gleich)</li>
+<li>Warngrenzen pruefung und aenderung ween toleranz kleiner ist und sehr enk.</li>
+<li>Formel aussicht verbessert (zusatzliche leertaste)</li>
+<li>2P-Meister plausibilitaet pruefung - in Entry</li>
+<li>extreme parameter werten pruefung aenderung &quot;&gt;=&quot;</li>
+<li>Deutschen texten korrigiert</li>
+</ul>
+<p>FW ver 0.7.8.4B / 23.03.2021: (datei unterladen: <a href="//goefs01/Mahr-Gruppe/Benutzergruppen/Transfer%20ENTW/Esslingen/C1202/Firmware/0.7.8.4B/C1202.bin">C1202.bin</a> )</p>
+<ul>
+<li>fehlende &quot;[&quot; &quot;]&quot; &quot;%&quot; Zeichen und andere zugefuegt</li>
+<li>pinAcces Tasten ordnung geaendetr</li>
+<li>angepasst laenege fuer alle Sprachen und alle Worte/Saetze</li>
+<li>string laenge ueberwahung in code ueberall fuer sichere sprachen bearbeitung</li>
+</ul>
+<p>FW ver 0.7.8.4A / 19.03.2021: (datei unterladen: <a href="//goefs01/Mahr-Gruppe/Benutzergruppen/Transfer%20ENTW/Esslingen/C1202/Firmware/0.7.8.4A/C1202.bin">C1202.bin</a> )</p>
+<ul>
+<li>korrigiert fehlende Fontszeichen</li>
+<li>aufloesung Winkel</li>
+<li>Check box in Multichoice (Anzahl Merkmal, Fussschalter, Verschiedene und Servis)</li>
+</ul>
+<p>FW ver 0.7.8.4 / 19.03.2021: (datei unterladen: <a href="//goefs01/Mahr-Gruppe/Benutzergruppen/Transfer%20ENTW/Esslingen/C1202/Firmware/0.7.8.4/C1202.bin">C1202.bin</a> )</p>
+<ul>
+<li>alle 11 Sprachen implemetiert</li>
+<li>angepasst Font-satzt</li>
+<li>Worte/Satzte korrekturen</li>
+</ul>
+<p>FW ver 0.7.8.3B / 19.03.2021: (datei unterladen: <a href="//goefs01/Mahr-Gruppe/Benutzergruppen/Transfer%20ENTW/Esslingen/C1202/Firmware/0.7.8.3B/C1202.bin">C1202.bin</a> )</p>
+<ul>
+<li>Stabile 9 <strong>Sprachen</strong> (&quot;Deutsch&quot;, &quot;中文&quot;, &quot;Čeština&quot;, &quot;English&quot;, &quot;Français&quot;, &quot;Italiano&quot;, &quot;Polski&quot;, &quot;Português&quot;, &quot;Русский&quot;)</li>
+<li><strong>Font</strong>-satz aktualisiert und angepasst zum benutzte Werte.</li>
+</ul>
+<p>FW ver 0.7.8.3A / 18.03.2021: (datei unterladen: <a href="//goefs01/Mahr-Gruppe/Benutzergruppen/Transfer%20ENTW/Esslingen/C1202/Firmware/0.7.8.3A/C1202.bin">C1202.bin</a> )</p>
+<ul>
+<li>9 sprachen</li>
+<li>kleien verbesserungen fuer sprachen mit langere Saetze/Worte</li>
+<li>ersten start aenderung</li>
+</ul>
+<p>FW ver 0.7.8.3 / 18.03.2021: (datei unterladen: <a href="//goefs01/Mahr-Gruppe/Benutzergruppen/Transfer%20ENTW/Esslingen/C1202/Firmware/0.7.8.3/C1202.bin">C1202.bin</a> )</p>
+<ul>
+<li>Navigierung im Merkmal fixed</li>
+<li><strong>Formel</strong>: Funktion &quot;Normal&quot; als &quot;x&quot; und &quot;keine&quot; im Formel gezeigt</li>
+<li><strong>Korrektur</strong> kurze Namen verbessert fuer Multilanguage</li>
+<li><strong>Sprachen</strong> Namen abkurzung</li>
+<li><strong>erste Start</strong> Verbessert</li>
+<li>(limitiert 6 sprachen)</li>
+</ul>
+<p>FW ver 0.7.8.2E / 17.03.2021: (datei unterladen: <a href="//goefs01/Mahr-Gruppe/Benutzergruppen/Transfer%20ENTW/Esslingen/C1202/Firmware/0.7.8.2E/C1202.bin">C1202.bin</a> )</p>
+<ul>
+<li><strong>MarCom</strong> fix: Warngrenze Werte pruefung wenn in C1202 ist in Laenge</li>
+<li><strong>Merkmal Auswahl</strong> menu anzeige Korrektur - fehler von 16.03.2021 QS</li>
+<li>neue Sprachen&quot; <strong>Chinesisch</strong> (einpaar Zeicheen fonts Felhen), <strong>Spanisch</strong></li>
+<li>Fix: <strong>Bug-Id: 45696</strong> mit Winkel editierung</li>
+<li>Fix: <strong>Bug-Id: 45697</strong> Winkeleinheiten Multisprachig</li>
+</ul>
+<p>FW ver 0.7.8.2D / 16.03.2021: (datei unterladen: <a href="//goefs01/Mahr-Gruppe/Benutzergruppen/Transfer%20ENTW/Esslingen/C1202/Firmware/0.7.8.2D/C1202.bin">C1202.bin</a> )</p>
+<ul>
+<li><strong>MarCom</strong> rundungsverbesserung wenn modul wechsel HR-Normal</li>
+<li><strong>MarCom</strong> neu kriterium fuer Werte stetzen: nachricht-laenge max 50 zeichen</li>
+<li><strong>MarCom</strong> Rundung verbesserung fuer &quot;deg&quot;</li>
+</ul>
+<p>FW ver 0.7.8.2C / 15.03.2021: (datei unterladen: <a href="//goefs01/Mahr-Gruppe/Benutzergruppen/Transfer%20ENTW/Esslingen/C1202/Firmware/0.7.8.2C/C1202.bin">C1202.bin</a> )</p>
+<ul>
+<li><strong>MarCom</strong> HR-Modul Aufloesung fuer inch und mm dynamisch</li>
+<li><strong>MarCom</strong> Min-Max pruefen verbesserung</li>
+<li><strong>MarCom</strong> inch rundung letzte Ziffer (0/5) fuer HR und nicht-HR Modulen</li>
+<li><strong>MarCom</strong> deg rundung letzte Ziffer (0/5)</li>
+<li><strong>MarCom</strong> Aufloesung anpassund fuer Andere elemente</li>
+<li><strong>MarCom</strong> neu Fehler &quot;ERR7&quot; wenn C1202 ist in menu Aktiv</li>
+</ul>
+<p>FW ver 0.7.8.2B / 12.03.2021: (datei unterladen: <a href="//goefs01/Mahr-Gruppe/Benutzergruppen/Transfer%20ENTW/Esslingen/C1202/Firmware/0.7.8.2B/C1202.bin">C1202.bin</a> )</p>
+<ul>
+<li>fix: mutlichoice sturz (Merkmal Auswahl, Fussschalter, Verschiedene, Service)</li>
+</ul>
+<p>FW ver 0.7.8.2 / 12.03.2021: (datei unterladen: <a href="//goefs01/Mahr-Gruppe/Benutzergruppen/Transfer%20ENTW/Esslingen/C1202/Firmware/0.7.8.2/C1202.bin">C1202.bin</a> )</p>
+<ul>
+<li><strong>Max-Min</strong> korrigiert -&gt; Frage: wie soll <strong>Meister</strong> in diesem funktion bechandelt sein?</li>
+<li>Sprachen: <strong>English</strong>, <strong>Deutsch</strong>, <strong>Polnisch</strong>, <strong>Tchechisch</strong>, <strong>Franzoesisch</strong>, <strong>Russisch</strong> (nicht stabil), <strong>Schwedisch</strong> implementiert aber noch nicht Editiert</li>
+</ul>
+<p>FW ver 0.7.8.1E / 11.03.2021: (datei unterladen: <a href="//goefs01/Mahr-Gruppe/Benutzergruppen/Transfer%20ENTW/Esslingen/C1202/Firmware/0.7.8.1E/C1202.bin">C1202.bin</a> )</p>
+<ul>
+<li>MarCom fix:, <strong>START</strong> Echo</li>
+</ul>
+<p>FW ver 0.7.8.1D / 11.03.2021: (datei unterladen: <a href="//goefs01/Mahr-Gruppe/Benutzergruppen/Transfer%20ENTW/Esslingen/C1202/Firmware/0.7.8.1D/C1202.bin">C1202.bin</a> )</p>
+<ul>
+<li>Marcom Neu fehler EER6 - wenn keine datei verfuegbar</li>
+<li>MarCom <strong>START</strong> <strong>STOP</strong> fuer ein Merkmal korrigiert, auch Reset fuer <strong>START</strong> zugefuegt</li>
+<li>MarCom <strong>?</strong> winkel mit toleranzgrenzen korrigiert</li>
+</ul>
+<p>FW ver 0.7.8.1C / 11.03.2021: (datei unterladen: <a href="//goefs01/Mahr-Gruppe/Benutzergruppen/Transfer%20ENTW/Esslingen/C1202/Firmware/0.7.8.1C/C1202.bin">C1202.bin</a> )</p>
+<ul>
+<li>Menu-bau verbessert - schneller und sichere Menu upddate nach parameneter enderung, besonderes: Aufloesung, Einheit (L+W), Formel (atan), u.a.</li>
+<li>Werterbuch bearbeitung (doppelte werte, liste, getrennt sind werte ohne sprachen optionen wie eigene Namen) und implementierung in code</li>
+<li>Fix - MarCom <strong>START</strong> <strong>STOP</strong> antwort korrigiert</li>
+</ul>
+<p>FW ver 0.7.8.1B / 05.03.2021: (datei unterladen: <a href="//goefs01/Mahr-Gruppe/Benutzergruppen/Transfer%20ENTW/Esslingen/C1202/Firmware/0.7.8.1B/C1202.bin">C1202.bin</a> )</p>
+<ul>
+<li>grosse zahlen verbesserung Testbericht von 26.02.2021</li>
+</ul>
+<p>FW ver 0.7.8.1 / 05.03.2021: (datei unterladen: <a href="//goefs01/Mahr-Gruppe/Benutzergruppen/Transfer%20ENTW/Esslingen/C1202/Firmware/0.7.8.1/C1202.bin">C1202.bin</a> )</p>
+<ul>
+<li>neu parameter fuer nicht offentliche optionen wie Optimar, FPS anzeigen und Marnet Pasiv: <strong>Service</strong> - PIN gesichert (1861)</li>
+<li>fix: Namen in &quot;Modul Programmieren&quot; fuer HR-Modul</li>
+<li>Wuerterbuch und parameters aktualisiert (in bearbeitung)</li>
+<li>screenshots erweitet fuer dynamische elemente in menu (noch in bearbeitung)</li>
+<li>MarCom: neu Befehl <strong>PRE, PRE1, PRE2, PRE3</strong> Meistern</li>
+<li>prezision erhoert in &quot;inch&quot; Anzeige,</li>
+<li>Tastenbeschreibung in Kundenkorrektur, Werkseinstellung und Modul Programieren korrigiert (wenn prozess leuft, keine Taste ist aktiv - wird asugeblended).</li>
+</ul>
+<p>FW ver 0.7.8.0 / 25.02.2021: (datei unterladen: <a href="//goefs01/Mahr-Gruppe/Benutzergruppen/Transfer%20ENTW/Esslingen/C1202/Firmware/0.7.8.0/C1202.bin">C1202.bin</a> )</p>
+<ul>
+<li>Erschrenkung der unterschtuzten Modulen nach Artickelnummern:
+(&quot;5331120&quot;, &quot;5331121&quot;, &quot;1234567&quot;, &quot;5331150&quot;, &quot;5331151&quot;, &quot;5331152&quot;, &quot;5331155&quot;, &quot;5331156&quot;, &quot;5331157&quot;, &quot;5331125&quot; )
+Wenn modul nicht unterstuezt ist, Fenster mit Fehler wird gezeigt</li>
+<li>Neue aufloesungen implementiert: &quot;0,00001 mm&quot;, &quot;0,01 um&quot; und &quot;0,0000005 inch&quot;. Auswahl moeglich nur wenn HR-Modul angeschlossen ist.
+<ul>
+<li>wenn auf nicht HR-Modul gewchselt ist, hoechste mogiche aufloesung eingestellt ist</li>
+</ul>
+</li>
+<li>&quot;um&quot; und &quot;inch&quot; parameter fuer hoehre Aufloesung editierung angepast</li>
+<li>Fix: einstellung fuer &quot;inch&quot; limitierung der erste ziffer (0-3 moeglich)</li>
+<li>Messanzeige erweitert auf HR hoehere Aufloesung</li>
+<li>Nullen speicher verbessert, 1P-nullen wird immer gespeichert, 2P-nullen wird nicht gespeichert wenn messwerte sind gleich, delta = 0 (bei delta=0 , umrechnung kann nicht durchgefuert werden).</li>
+<li>Messanzeige verbesset und angepasst allgemein das ist plausibel mit hoehere HR Aufloesung</li>
+<li>nullen in automatik Betriebsart verbessert, immer Nullen als Standart</li>
+<li>nullen in manuel Betriebsart verbessert. z.B. parallel Nullen: nur wenn alle Merkmalle genullt sind - umschalten auf Extremwerte-reset moeglich</li>
+<li>Winkelmessung genauigkeit verbessert</li>
+<li>screenshot in Einrichten, &quot;spash screen&quot;, werkseinstellung (bei starten T2 und T3 - aktiv ist T3 wenn seite wird Gezeigt), &quot;Wizzard&quot; (T5 LP) - erst muss option aktiv in Verschiedenes Sein, nachdem Wizzard abgeschlossen ist. Nur einmal.</li>
+<li>Einrichten, aufloesung angepasst zum HR-modul wenn angeschlossen.</li>
+</ul>
+<p>FW ver 0.7.7.9E / 23.02.2021: (datei unterladen: <a href="//goefs01/Mahr-Gruppe/Benutzergruppen/Transfer%20ENTW/Esslingen/C1202/Firmware/0.7.7.9E/C1202.bin">C1202.bin</a> )</p>
+<ul>
+<li>Fix: MarCom: fehlende &quot;;&quot; fuer mehrere Nachrichern zugefuedt</li>
+</ul>
+<p>FW ver 0.7.7.9D / 22.02.2021: (datei unterladen: <a href="//goefs01/Mahr-Gruppe/Benutzergruppen/Transfer%20ENTW/Esslingen/C1202/Firmware/0.7.7.9D/C1202.bin">C1202.bin</a> )</p>
+<ul>
+<li>Fix: winkelsekunde aufloesung</li>
+<li>Fix: einheit aenderung verbessert (selecktiv update)</li>
+<li>Fix: aufloesung aenderung verbesserung (selecktiv update)</li>
+<li>Fix: <strong>Einrichten</strong> schrinken und vergroessen Tastebeschreibung verbessert</li>
+<li>Fix: MarCom <strong>NOMINAL?</strong> alle werte (inkl. winkel) geshcickt.</li>
+<li>Fix: MarCom <strong>&quot;;&quot;</strong> ueberall am Nachrichtende entfernt.</li>
+<li>Aenderung:: MarCom aufloesung fuer winkel <strong>&quot;deg&quot;</strong> angepasst fuer 5-nachkomma stellen</li>
+<li>Ausschalten moeglichkeit waerhend Wizzart einstellung (ersten Start).</li>
+<li>Fix MarCom: Fehler mit fehlendem &quot;;&quot; &quot;MASTER?&quot;, &quot;NOMINAL?&quot;, &quot;TOL?&quot; und &quot;TOLW?&quot;</li>
+</ul>
+<p>FW ver 0.7.7.9C / 18.02.2021: (datei unterladen: <a href="//goefs01/Mahr-Gruppe/Benutzergruppen/Transfer%20ENTW/Esslingen/C1202/Firmware/0.7.7.9C/C1202.bin">C1202.bin</a> )</p>
+<ul>
+<li>MarCom <strong>MASTER1,2,3</strong> fuer 1P und 2P Meister implementiert</li>
+<li>MarCom <strong>MASTER?</strong> fuer 2P meister implementiert. 1P-Meister 3xWerte sind scheschickt wenn 1P-Meister aktiv ist, 2P-Meister 3x2=6 Werte wenn 2P meister aktiv ist</li>
+<li>MarCom <strong>MASTER1,2,3; NOMINAL1,2,3; TOL1,2,3; TOLW1,2,3</strong> mit <em>inch</em> setzen moeglich</li>
+<li>MarCom <strong>MASTER, NOMINAL, TOL, TOLW</strong> setzen und rufen wenn Merkmal nicht Aktiv ist Fehler <strong>ERR3</strong> ist geschickt</li>
+<li>Fix: 2P-Meister display</li>
+<li>Fix: <strong>hand</strong> anzeige in automatische messung waerend messung und daten senden ist nicht parallel.</li>
+<li>Fix: <strong>Data senden Ikone</strong> gezeigt wenn MarCom <strong>Mx?</strong> ist angefoerdet</li>
+<li>MarCom <strong>MASTER?, NOMINAL?, TOL?, TOLW?</strong> alle werte sind uebertragen, laenge (<em>mm</em> oder <em>inch</em>) und winkel (<em>deg</em>) fuer alle Merkmale.</li>
+<li>MarCom: <strong>Artikelnummer</strong> 9-stellig</li>
+</ul>
+<p>FW ver 0.7.7.9B / 16.02.2021: (datei unterladen: <a href="//goefs01/Mahr-Gruppe/Benutzergruppen/Transfer%20ENTW/Esslingen/C1202/Firmware/0.7.7.9B/C1202.bin">C1202.bin</a> )</p>
+<ul>
+<li><strong>Screen Saver</strong> wird deaktiviert wenn messung leuft</li>
+<li><strong>Screen saver</strong> in menu korrigiert. wenn in menu - deaktivierung bei wer-aenderung nicht moeglich</li>
+<li>screen saver deaktivieung durch wert-aenderung in winkelmessung weniger sensibel (10x)</li>
+<li><strong>Fix</strong>: Automatisches Betriebsart <strong>Winkelmessung</strong>: Werte in stopp sind gefrohen (wie im laenge messung)</li>
+<li><strong>&quot;Hand&quot;</strong> Anzeige - Farbe gaeendert von schwarz auf dynamische Farben Hintergrund gesteuert: Weiss Hintergrund -&gt; blau, Gruen -&gt; blau, Gelb -&gt; blau, Rot -&gt; gelb) (P5. von 12.02.2021 (p4. von 12.02.2021))</li>
+<li><strong>&quot;Hand&quot;</strong> Anzeige, kleine bewegung zeitgesteuert und bei Merkmall aenedung mit Taste 4. Nicht aktiv venn messung leuft</li>
+<li><strong>Menu Geaendert</strong>: Nennmass mit Tolrenz umgetauscht (p4. von 12.02.2021)</li>
+<li><strong>Nullen/Reset</strong> Taster in Automatik Modi geaendert. Umschaltung nur manuel moeglich. (p3. von 12.02.2021)</li>
+<li><strong>Nullen/Reset</strong> Taster Manuel Betrieb Verbessert, automatische wechsel, start modi erkennung, u.a.</li>
+<li><strong>Mittelwert</strong> in Automatik und Manuel Betriebsart Reset verbessert. (p2. von 12.02.2021)</li>
+<li>Bei neustart, <strong>werte umrechnung</strong> (beziehungsweise wichtig bei funktionen) erst wenn erste werte von Messmodul kommen. Anflus: Mittelwert, Min und Max</li>
+<li><strong>Winkel</strong> messung bei <em>inch</em>, fuer rechnen sind gerundete Werte benutzt</li>
+<li>screen saver korrigiert</li>
+<li><strong>MarCom, &quot;?&quot;</strong> daten senden fuer <strong>&quot;Grad&quot;</strong> korrigiert</li>
+<li>kleine verbesserungen</li>
+</ul>
+<hr>
+<p>FW ver 0.7.7.9 / 11.02.2021: (datei unterladen: <a href="//goefs01/Mahr-Gruppe/Benutzergruppen/Transfer%20ENTW/Esslingen/C1202/Firmware/0.7.7.9/C1202.bin">C1202.bin</a> )</p>
+<ul>
+<li>MarCom:
+<ul>
+<li>Automatic betriebsart: <strong>START, STOP, PAUSE</strong></li>
+<li>Extremwerte Reset: <strong>RST, RST1, RST2, RST3</strong> - EER3 wenn Merkmal ist kein extremwert</li>
+<li>Meister setzen: <strong>MASTER1 , MASTER2, MASTER3</strong>: einheit &quot;mm&quot; fuer laenge und &quot;deg&quot; fuer winkel. Formatierung ueberwachung: leerzeichen, punkt,.u.a. (kein 2P-meister)</li>
+<li>Meister lesen: <strong>MASTER?</strong> - alle 6 (3 laenge und 3 winkel) unapheangig wieviel Merkmaellen sind aktiv, gild auch fuer setzen</li>
+<li>Nennmass setzen: <strong>NOMINAL1, NOMINAL2, NOMINAL3</strong> - eanlig wie bei Meister setzen</li>
+<li>Nennmass lesen: <strong>NOMINAL?</strong> - aenlig wie bei Meister</li>
+<li>Toleranz setzen: <strong>TOL1, TOL2, TOL3</strong>: formatierung und uberwachung wie bei Meister, werte plausiblitaet ueberwachung, Wenn absolute Werte sind kleiner als Warmngrenzen, Warngrenzen sind automatisch koribgiert (wie diriekt bei Menu aenderung)</li>
+<li>Toleranz lesen: <strong>TOL?</strong> - alle 6 doppel werte sind geschickt</li>
+<li>Warngrenzen setzen: <strong>TOLW1, TOLW2, TOLW3</strong>: formatierung und uberwachung wie bei Meister, werte plausiblitaet ueberwachung. Wenn werte sind nicht mit Toleranz plausibel, EER3 fehler ist geschickt</li>
+<li>Artikelnummer setzen: <strong>T</strong>: neu Artikelnummer ist jetzt in eeprom gespeichert. setzen moeglich nur mit &quot;master password&quot;</li>
+<li>Serielnummer setzen: <strong>S</strong>: mit &quot;master password&quot;</li>
+<li><strong>T</strong> und <strong>S</strong> sind nicht geloscht waerend werkseinstellung durchfuerung</li>
+<li>Menu Lock password: <strong>LCK</strong> mit aktuelles PIN und master password moeglich</li>
+<li>Menu Lock aktivierung: <strong>LCK1</strong> ohne PIN moeglich</li>
+<li>Menu Lock deaktivierung <strong>LCK0</strong> nur mit PIN moeglich</li>
+</ul>
+</li>
+<li>Fehler behoben: Paraller Meister setzen nach ersten mal, moeglich (P1 von 05.02.2021)</li>
+<li>Standart werte fuer <strong><em>Anzahl meister</em></strong> und <strong><em>Verknoepfung</em></strong> neu gestzt: 1xMerkmall und alle Merkmalle standard &quot;+C1&quot; gestzt</li>
+<li>Werkseinstellung verbesserung (master, skala loeschen)</li>
+</ul>
+<hr>
+<p>FW ver 0.7.7.8B / 05.02.2021: (datei unterladen: <a href="//goefs01/Mahr-Gruppe/Benutzergruppen/Transfer%20ENTW/Esslingen/C1202/Firmware/0.7.7.8B/C1202.bin">C1202.bin</a> )</p>
+<ul>
+<li>Anzeige mit mittlere Fontgroesse Angepast und verbesert</li>
+</ul>
+<hr>
+<p>FW ver 0.7.7.8 / 04.02.2021: (datei unterladen: <a href="//goefs01/Mahr-Gruppe/Benutzergruppen/Transfer%20ENTW/Esslingen/C1202/Firmware/0.7.7.8/C1202.bin">C1202.bin</a> )</p>
+<ul>
+<li>Automatik-modi Zeiten einstellung wenn nur ein pneumatik Module eingeschlossen ist</li>
+<li>Menusperre mit PIN korrigiert (PIN-eintrag, Zeiten, Zeite-reset)
+Frage: soll PIN in menu Zeite laufen?</li>
+<li>nicht korrekt eingezeigte Ziffer waerend editirung (p.3 von 29.02.2021)</li>
+<li>&quot;(M+M)&quot; auf &quot;(M+M)/2&quot; umgesetzt (p.1 von 29.02.2021)</li>
+<li>MarCom Anfrage &quot;?&quot; u &quot;M1?&quot;, &quot;M2?&quot;, &quot;M3?&quot; verbessert, neue Vormatierunng: 00:00:00 dms</li>
+<li>Neue ikone in Automatik modi: &quot;hand&quot; nicht aktiv (p.14 von 22.01.2021)</li>
+<li>screen saver Verbessert (aublauf-zeit in Menu, deaktivierung nach funktion nicht Raw-werte)
+Frage: wenn Menusperre mint PIN und screen saver aktiv sind, soll nach screen saver Zeit Menu gespeert sein?</li>
+<li>MarCom - daten senden wenn in Menu - EER3 (von PC oder FS)</li>
+<li>Standart Werte geaendert:
+<ol>
+<li>Mermal Auswahl: M1, M2</li>
+<li>Merkmal M1, Formel Verknoepfung: +C1</li>
+<li>Merkmal M2, Formel Verknoepfung: +C2</li>
+<li>Merkmal M2, Formel Verknoepfung: +C1+C2</li>
+<li>Screen Saver: 5 min</li>
+<li>Aufloesung winkel M1, M2, M3: 1 (mitteleinstellung)</li>
+<li>Winkelmessung, Toleranz M1, M2, M3 Min: -1 Grad</li>
+<li>Winkelmessung, Toleranz M1, M2, M3 Max: 1 Grad</li>
+<li>Winkelmessung, Warngrenzen M1, M2, M3 Min: -1 Grad</li>
+<li>Winkelmessung, Warngrenzen M1, M2, M3 Max: 1 Grad</li>
+</ol>
+</li>
+<li>Falsche &quot;hand&quot; Anzeige und bedienung wenn nur eine Analoganzeige und kein kabel ist - Fehler bei Her Tluczek gefunden</li>
+<li>Toleranzgrenzen und Warngrenzen Plusibiliaet ueberwachung (p.2, von 22.01.2021)</li>
+<li>fehler behoben (p.2 von 29.01.2021) - falshce Anzeige wenn messung ist nicht gestartet in &quot;normal&quot;</li>
+<li>Mittlere Fontgroesse implementier (p.9 von 22.01.2021)</li>
+</ul>
+<hr>
+<p>FW ver 0.7.7.7 / 29.01.2021: (datei unterladen: <a href="//goefs01/Mahr-Gruppe/Benutzergruppen/Transfer%20ENTW/Esslingen/C1202/Firmware/0.7.7.7/C1202.bin">C1202.bin</a>)</p>
+<ul>
+<li>Automatik messung, funktion&quot; &quot;Normal&quot;, in Stopp/Pause Zahl und Zeiger/Balken sind eingrfroren (P1, 22.01.2021)</li>
+<li>Automatik messung, Toleranz &amp; Warngrenzen, funktion &quot;Normal&quot; auswertund in Stopp/Pause sin eingefroren (P2, 22.01.2021)</li>
+<li>Einrichten: Roten punkt, &quot;Auto&quot; und funktion anzeige entfernt (P5, 22.01.2021)</li>
+<li>Zeiger Anzeige verbesserung, wenn Toleranz nicht aktiv ist.</li>
+<li>Hauptanzeige korrigiert (Formel symbol und Auto Symbol)</li>
+<li>Falsche Anzeigeart nach parameter umschaltung (P6, 22.01.2021)</li>
+<li>2P- Meister anzeige korrigiert und 1P meister verbessert (P7, 22.01.2021)</li>
+<li>1P u. 2P Meister zustand Anzeige mit Ikone</li>
+<li>Menusperre mit PIN realisiert mit master PIN: &quot;1861&quot; (P8. 22.01.2021)</li>
+<li>Menusperre nach Parameter speicher wird sofort uebernohmen.</li>
+<li>Ensperrung nur fuer 1 minute nach der Zeit wenn keine Taste nicht betaetigt ist</li>
+<li>Screen Saver verbessert: deaktivierung nach: taste drueck, MarCom Datenanforderung, FS-druck, MarCom-kabel Tasterdrueck (P10, 22.01.2021)</li>
+<li>Screen saver deaktivierung nach Tasterwertaenderung, min. auf 2 im letzte eingestellte stelle (P10. 22.01.2021)</li>
+<li>&quot;Regen&quot; bildschirmschoinner verbessert mit gleiche eingeschaften wie in P10. von 22.01.2021 (oben geschhrieben) (P13. 22.01.2021)</li>
+<li>Setup 1 - Nullen Loeschen in Menu Implementiert (P15. 22.01.2021)</li>
+<li>in FS-einstellung - nicht aktive Zeilen sind nicht mit Kursor auswahl-moeglich. Tasten beschreibung Dynamisch aktualisiert (P12. 22.01.2021)</li>
+<li>Paralell nullen (u. nullen algemein) verbessert (P1, P2, P3, von 22.01.2021, Teil 3)</li>
+<li>Nullen loeschen nach Formel ediierung nur fuer eine Merkmalle</li>
+<li>Daten senden fuer markom Verbessert</li>
+</ul>
+<hr>
+<p>FW ver 0.7.7.6 / 22.01.2021: (datei unterladen: <a href="//goefs01/Mahr-Gruppe/Benutzergruppen/Transfer%20ENTW/Esslingen/C1202/Firmware/0.7.7.6/C1202.bin">C1202.bin</a>)</p>
+<ul>
+<li>Verschiedenes: Optimar Aktivieren wird nicht gespeichert, passiv mit reset und nicht speichern</li>
+<li>Betriebsart Automatik: Funktion &quot;Normal&quot; digialer Wert bei Pasue und Stopp eingefroreren (P1)</li>
+<li>Betriebsart Automatik, Funktion: Toleranz auswertung nach Pasue und Sttopp eingefroren (P2)</li>
+<li>Betriebsart Automatik: Messwert immer in schwarz, nur Farbe der punk aendert sich fuer Messzeit (P3)</li>
+<li>Betriebsart Automatik, Pausendauer = 0 und Messdauer = 0: Automatische Daten senden nur wenn &quot;Daten Senden&quot; is &quot;Parallel&quot; eingestellt (P4)</li>
+<li>Betriebsart Automatik, Fussschalter: &quot;Daten Senden&quot; + &quot;Start&quot; + &quot;Messdauer&quot; not eq 0, daten senden automatisch nach Messung. Waerend der Messung Daten senden immer aktiv. (P5)</li>
+<li>&quot;Hand&quot; Symbol bleibt aktiv waerend messung auch wenn messung leuft wenn noetig (P6)</li>
+<li>Bildschirmschoner auswahl 30min moeglich (P7)</li>
+<li>Wenn Toleranz aktiviert ist, Warngrenzen werden zuruckgeholtvon alte einstellung (P8)</li>
+<li>Wenn Tolernaz wird deaktiviert, Warngrenzen sind ausgegraut. (P9)</li>
+<li>MarCom, Befehl &quot;?&quot;: verbessert formatierung nach letzte Interface Beschreibung stand von 21.01. Werte uebeschritt mit ERR3 implementiert</li>
+<li>MarCom, Befehle &quot;M1&quot;, &quot;M2&quot; und &quot;M3&quot; implemetiert</li>
+<li>MarCom, Befehl &quot;ID?&quot; implementiert</li>
+<li>MarCom, Befehl &quot;DES?&quot; implementiert: <Brand> bleibt als Konstant in FW</li>
+<li>MarCom, Befehl &quot;VER?&quot; implementiert</li>
+<li>MarCom, Befehl &quot;OFF&quot; implementiert</li>
+</ul>
+<p>q:</p>
+<ol>
+<li>Toleranz und Warngrenzen - Sollen Warngrenzen &lt; als Toleranz sein?</li>
+<li>Automatik modi zyklische messung. anzahl der zyklen soll limiriert sein / oder einstell bar sein: 10/100/unbegrenzt</li>
+<li>wenn Menu ist blockiert, soll MarCom volstaendig funktioniert?</li>
+<li>HR-modul - welche tastertypen?</li>
+<li>wie soll daten senden in automatik betrieb funktionieren Taste 5?</li>
+<li>wenn meister messung und daten senden parallel und nur digitale werte - soll ikone sich aendern unter Taste 4</li>
+<li>wann soll nullen geloesch werden - jetzt ist nach formel editierung und anzahl meister aenderung</li>
+</ol>
+<hr>
+<p>FW ver 0.7.7.5 / 14.01.2021: (datei unterladen: <a href="//goefs01/Mahr-Gruppe/Benutzergruppen/Transfer%20ENTW/Esslingen/C1202/Firmware/0.7.7.5/C1202.bin">C1202.bin</a>)</p>
+<ul>
+<li>displayanzeige Merkmall synchronisiert: alle Merkmalle 1 - 3 sind berechnet mit gleiche messwerte in einem bild.</li>
+<li>nullen parallel fuer alle Merkmalle auch mit Gleichen Werten</li>
+<li>winkel umrechnung geprueft und verbessert (runden fuer 0,00005 grad), liste in Anhang</li>
+<li>Warngrenzen Aktivierungs moglich nur wenn Toleranzgrenzen akiv sind.</li>
+<li>Wenn Tolernz deaktiviert ist, Warngrenzen werden auch automatisch deaktiviert</li>
+<li>Standard werte fuer Tolernaz und Warngrenzen geendert</li>
+<li>Standart Werte fuer 2P-Meister geaendert</li>
+<li>fix: parallel nullen ikonen anziege</li>
+<li>Optimar interface implementiert:
+<ul>
+<li>nur in &quot;ABSOLUTE&quot; modi moeglich,</li>
+<li>bautrate 4800bps,</li>
+<li>neu &quot;m2&quot; befehl fuer &quot;C2&quot; Kanal, (ist das Optimar kompatibel ?)</li>
+<li>Optimar aktivierung in &quot;System 2&quot; -&gt; &quot;Verschiedenes&quot; -&gt; &quot;Optimar aktivieren&quot;</li>
+<li>Wenn Optimar Interface Aktiviert ist, kiene andere befehle aktiv sind</li>
+<li>manuel senden mit Taste 5, noch aktiv nur mit anderen baudrate</li>
+<li>Messbild Taste 5 aktive Optimar modi Anzeige - Neue ikone Ikonen</li>
+<li>parameter gilt nur fuer einmal ausschalten</li>
+</ul>
+</li>
+<li>Messanzeige, digital Anzeige: Font groesse und position Verbesserung
+<ul>
+<li>Fontgroesse aphaengig von aufloesung ung Anzahl Merkmale</li>
+<li>wenn 2 odeer 1 Merkmalle sind aktiv: immer Groesste Font, angepasst in freien platz unter</li>
+</ul>
+</li>
+</ul>
+<p>q:</p>
+<ul>
+<li>Toleranz &amp; Warng. plausibilitaet pruefung? welche Standart Werte?</li>
+<li>welches Wert soll fuer Optimar geschickt werden: einheit = &quot;um&quot;, kanal = &quot;C1&quot;, offset = &quot;kein&quot;?</li>
+<li>welches fehler senden wenn optimar aktiv ist und z.B. &quot;?&quot; geschickt ist (senden EER2 oder EER3)</li>
+<li>soll T5 in Optimar modi aktiv sein?</li>
+</ul>
+<hr>
+<p>FW ver 0.7.7.4B / 08.01.2021: (datei unterladen: <a href="//goefs01/Mahr-Gruppe/Benutzergruppen/Transfer%20ENTW/Esslingen/C1202/Firmware/0.7.7.4B/C1202.bin">C1202.bin</a>)</p>
+<ul>
+<li>korrektur, Werte null-nah 0,0000 mm (0,0001mm)</li>
+<li>kein Hansymbol wenn Datenkabel nicht angeschlossen</li>
+</ul>
+<hr>
+<p>FW ver 0.7.7.4 / 08.01.2021: (datei unterladen: <a href="//goefs01/Mahr-Gruppe/Benutzergruppen/Transfer%20ENTW/Esslingen/C1202/Firmware/0.7.7.4/C1202.bin">C1202.bin</a>)</p>
+<ul>
+<li>Logo im Startbild Verbessert</li>
+<li>Automatik Modi: warend messung Analogwerten gezeigt werden</li>
+<li>&quot;AUTO&quot; anzeige in Messbild</li>
+<li>Aktive Messunganzeige in Messung mit Gelbe und Gruene Zirkel</li>
+<li>Aktive Messunganzeige Ziffer Grau</li>
+<li>Start Verzuegreung nur einmal bei Zycklische Messung</li>
+<li>daten senden - when pausendauer != 0, immer (wenn kabel angeschlossen ist)</li>
+<li>In zyklus messung reset immer bei nue messung start</li>
+<li>fussschalter: MinMax Reset nur wenn in menu ausgewaehlt</li>
+<li>Anzeigeart: korigiert wechsel von Zeiger wenn mehr Merkmaele aktiv sind</li>
+</ul>
+<hr>
+<p>FW ver 0.7.7.3 / 17.12.2020: (datei unterladen: <a href="//goefs01/Mahr-Gruppe/Benutzergruppen/Transfer%20ENTW/Esslingen/C1202/Firmware/0.7.7.3/C1202.bin">C1202.bin</a>)</p>
+<ul>
+<li>FS debauncing fuer Messdauer (Start und Stop - fallende und steigende Flanke)</li>
+<li>Menu optionen ausgrauen und deaktivieren - wenn FS &quot;Messdauer&quot; asugewaehlt ist.</li>
+<li>FS bei &quot;Messdauer&quot;, Messdauer Zeit und Pausendauer Zeit sind ignoriert</li>
+</ul>
+<hr>
+<p>FW ver 0.7.7.2B / 17.12.2020: (datei unterladen: <a href="//goefs01/Mahr-Gruppe/Benutzergruppen/Transfer%20ENTW/Esslingen/C1202/Firmware/0.7.7.2B/C1202.bin">C1202.bin</a>)</p>
+<ul>
+<li>Standardwerte fuer Messdauer, Pausendauer und StartVerzuegerung Zeiten sind gleich null.</li>
+<li>Ikone &quot;Start&quot; nach Pausieren geaendert,</li>
+<li>Ausgrauen und Deaktivieren: Messdauer, Pausendauer und StartVerzuegerung wenn Manuel Betriebsart asgewaehlt ist.</li>
+<li>FS Auswahl dynamische Regeln implemetiert (Moegliches Auswahl: entweder &quot;Start&quot; und/oder &quot;Stop&quot;, oder &quot;Messdauer&quot;).</li>
+<li>Neue werte in Automodi nur wenn Messung lauft</li>
+<li>Markierung mit Gruenen Zirkel das die Were sind angefoerdert</li>
+<li>Automodi: waerent messung in Pausenzustand Starttaste ohne optionalen Langdruck</li>
+<li>Reset bei neu Messung Start. Nach Pause Reset wird nich durchdefuehrt.</li>
+<li>bugfix id 45142: Formel Faktor Max Wert wenn &quot;inch&quot; ausgewaehlt 399.9999 statt 999.9999</li>
+<li>bugfix id 45142: zu lange formel endung aenderung von &quot;...&quot; auf &quot;(...)&quot;, Formel verkurzung mit entvernen Leerzeichnen</li>
+<li>FS &quot;Daten Senden&quot;, &quot;Meistermessung&quot; und &quot;Reset Min Max&quot; nur moeglich in Manuel und in Automatik wenn messung nicht leuft</li>
+<li>FS &quot;Daten Senden&quot; aktiv mit &quot;Stop&quot; oder &quot;Messdauer&quot; waehrend Messung aktiv.</li>
+</ul>
+<hr>
+<p>FW ver 0.7.7.2 / 15.12.2020: (datei unterladen: <a href="//goefs01/Mahr-Gruppe/Benutzergruppen/Transfer%20ENTW/Esslingen/C1202/Firmware/0.7.7.2/C1202.bin">C1202.bin</a>)</p>
+<ul>
+<li>bugfix no: 45309: &quot;Auswahl aufloesung winkel&quot; - interne werte umrechnung fue 0,1um gerundet</li>
+<li>korrigiert Werkseinstellung mit 1 Luftmodul - stuehrung - behoben</li>
+</ul>
+<hr>
+<p>FW ver 0.7.7.1 / 10.12.2020: (datei unterladen: <a href="//goefs01/Mahr-Gruppe/Benutzergruppen/Transfer%20ENTW/Esslingen/C1202/Firmware/0.7.7.1/C1202.bin">C1202.bin</a>)</p>
+<ul>
+<li>optimiertung von anzahl kanallen und modulen. wird benuzt in Modulen flashen</li>
+<li>Modulen Programieren ablauf verbesserung und texte besonderes in Pneumatische Modulen (richtige namen von modulen)</li>
+<li>Kurznamen fuer Pneumatische modulen Anzeige in Info-seite</li>
+<li>Automitik betriebsart verbesserung</li>
+<li>kleine aenderungen</li>
+</ul>
+<hr>
+<p>FW ver 0.7.7.0 / 09.12.2020: (datei unterladen: <a href="//goefs01/Mahr-Gruppe/Benutzergruppen/Transfer%20ENTW/Esslingen/C1202/Firmware/0.7.7.0/C1202.bin">C1202.bin</a>)</p>
+<ul>
+<li>Automatic mode implemented</li>
+</ul>
+<hr>
+<p>FW ver 0.7.6.7 / 04.12.2020: (datei unterladen: <a href="//goefs01/Mahr-Gruppe/Benutzergruppen/Transfer%20ENTW/Esslingen/C1202/Firmware/0.7.6.7/C1202.bin">C1202.bin</a>)</p>
+<ul>
+<li>datei ueberwachung fuer Messmodul flashen:
+<ul>
+<li>extention muss &quot;.txt&quot; sein,</li>
+<li>Name muss &quot;MarNet&quot; string haben (case sensitive),</li>
+<li>ganznamelaenge &lt; 14 Zeichen</li>
+</ul>
+</li>
+<li>Wenn 2 Luft modulen sind eingeschlossen, beide sind immer eine nach ander geflasht automatisch</li>
+<li>Luftmodulen flaschen parameter &quot;12&quot; (&quot;PE-Wandler-Variante&quot;) wird bevor Flashen kopiert und nach neu Falshen wiedergestellt. Normal, nach flashen man muss das manuel einstellen (z.B in &quot;MillimarN1700&quot; PC Anwendung)</li>
+<li>Modul Falshen visusalisierung verbessert (auch Namen)</li>
+</ul>
+<hr>
+<p>FW ver 0.7.6.6 / 01.12.2020: (datei unterladen: <a href="//goefs01/Mahr-Gruppe/Benutzergruppen/Transfer%20ENTW/Esslingen/C1202/Firmware/0.7.6.6/C1202.bin">C1202.bin</a>)</p>
+<ul>
+<li>
+<p>new icons for MarCom not active</p>
+</li>
+<li>
+<p>removed digimatic parameter from menu and conditions</p>
+</li>
+<li>
+<p>Customer calibration with air gauge: initial calibration min and max: +-50 instead of +-300 for inductiove modules</p>
+</li>
+<li>
+<p>chenge of &quot;edit button&quot; in multichoice entry. added dynamic feature</p>
+</li>
+<li>
+<p>change in screen saver menu - one menu for on and time insead of two. matrix rain moved to &quot;general settings&quot;</p>
+</li>
+<li>
+<p>standard resolution for length and angle as middle one</p>
+</li>
+<li>
+<p>corrected form for no module display</p>
+</li>
+<li>
+<p>module flashing visualistaion, automatic reinit after flashing, names and dictionary</p>
+</li>
+<li>
+<p>Factory Corretion with Factory reset</p>
+</li>
+<li>
+<p>elimination of startup flash</p>
+</li>
+<li>
+<p>disabled bargraphs ake keymarkings</p>
+</li>
+<li>
+<p>Neue Ikonen Fuer MarCom wenn USB kabel nicht Verbunden ist. 4 Ikonen fuer (manuel, sequenziel, parallel und general) ausgegraut und gekruezt</p>
+</li>
+<li>
+<p>Digimatic Aktivierung entfernt von menu. Neues Logik: Digimatic bleibt aktiv immer wenn USB-kabel ist nicht verbunden. muss nicht aktiviert sein. Wenn kein USB-kabel ist nicht verbunden, snde funktion mit Taste, und Fussschalter sind nicht aktiv. Das wird mit asugegrauten Ikonen gezeigt.</p>
+</li>
+<li>
+<p>Kundenkalibrierung fuer Luftmodulen: Initial &quot;Min&quot; &quot;Max&quot; Referenzwerte sind +-50um. Bei induktievemodulen bleibt +-300um</p>
+</li>
+<li>
+<p>neue Ikonen fuer Parametern mit mehrfach-auswahl. Dynamisch gesteuert.</p>
+</li>
+<li>
+<p>bilschirmschoner einstellung in Menu-&gt;Anzeige: Verbunden Ein-Aus mit Zeiteinstellung. Alternatives bildschirmschoner in System 2 &quot;Verschiedenes&quot;</p>
+</li>
+<li>
+<p>Standartwerte fuer Aufloesung (Laenge und Winkel) sind mittlere einstellung (wie in C1200)</p>
+</li>
+<li>
+<p>Verbessung im &quot;Kein Modul&quot; Anzeige, wenn kein modul angeschlossen ist</p>
+</li>
+<li>
+<p>Messmodul Firmware update in &quot;System 2&quot;. datei asuwahl, Fortschritt Anzeige und Re-initialisierung nach Update. Flashen gild nur fuer ein modul. Wenn 2 Lufmodullen sind angeschlossen nur erstes wird geflasht.
+Um Messmodul zu flashen, kopieren FW-datei auf SD-karte. von menu-&gt;System 2-&gt;Modul programmieren</p>
+</li>
+<li>
+<p>bei Werkseinstellung Korrektur wird auf Wekrkorrektur umgestellt fuer beide kanaelle.</p>
+</li>
+<li>
+<p>neustart flash eliminiert</p>
+</li>
+<li>
+<p>demo balkenanzeige fuer Automatische messung deaktiviert</p>
+</li>
+</ul>
+<p>!!!Wichtig,
+um Bildschirmkopie zu machen, erst in &quot;Menu-&gt;Setup 2-&gt;Verschidenes&quot; Funktion Aktivieren.</p>
+
+    </body>
+    </html>
