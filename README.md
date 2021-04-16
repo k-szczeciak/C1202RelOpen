@@ -1,4 +1,10 @@
+
 # Millimar Software C1202
+FW ver 0.7.8.8 / 15.04.2021: (datei unterladen: [C1202.bin](//goefs01/Mahr-Gruppe/Benutzergruppen/Transfer%20ENTW/Esslingen/C1202/Firmware/0.7.8.8/C1202.bin) )
+- seriennummer und artikelnummer werden nicht von par-datei uebernohmen
+- anpassung fuer fertigungstools: Seriennummer erset FW ladung: 0 und erste start MarCom mit 4600bps (das kommt von C1200) sn-werkzeug bps ist festkodiert
+- "Kein modul" verbesserung - screenshot und tastendrueck verbessrung
+
 FW ver 0.7.8.7 / 13.04.2021: (datei unterladen: [C1202.bin](//goefs01/Mahr-Gruppe/Benutzergruppen/Transfer%20ENTW/Esslingen/C1202/Firmware/0.7.8.7/C1202.bin) )
 - Erste start verbessert und optimiert: Zeitenm, artikelnummer und seriennummer richtig eingestellt
 - eerpom erase moeglich um Erst Start zu simulieren
