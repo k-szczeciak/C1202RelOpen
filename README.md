@@ -1,6 +1,6 @@
 [all versions](https://github.com/k-szczeciak/C1202RelOpen)
 # Millimar Software C1202, Incremntal module
-### **FW ver 0.8.0.1 / 06.05.2021: [download C1202.bin](https://github.com/k-szczeciak/C1202RelOpen/raw/master/0.8.0.2/C1202.bin)**
+### **FW ver 0.8.0.2 / 06.05.2021: [download C1202.bin](https://github.com/k-szczeciak/C1202RelOpen/raw/master/0.8.0.2/C1202.bin)**
 - bugfix - wizzard, kein einheit auswahl
 - N1702 VSS parameter lesen und zeigen
 - Neu N1700 PC SW anpassung:
