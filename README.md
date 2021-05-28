@@ -1,6 +1,19 @@
 [all versions](https://github.com/k-szczeciak/C1202RelOpen)
 # Millimar Software C1202, Incremntal module
-### **FW ver 0.8.0.2 / 06.05.2021: [download C1202.bin](https://github.com/k-szczeciak/C1202RelOpen/raw/master/0.8.0.2/C1202.bin)**
+### **FW ver 0.8.0.3 / 28.05.2021: [download C1202.bin](https://github.com/k-szczeciak/C1202RelOpen/raw/master/0.8.0.3/C1202.bin)**
+- demos fuer Geschwindigkeit und Umdrehungen entfernt
+- neues bedien konzept fuer Formel, Toleranz&Wangrenzen und 2P-Meister implementiert
+- Incremental Modul parametrierung verbesserung:
+  - Shift Phase correction prozedure implementiert (ablaufzeit, neu wert anzeige, fehler anzeige, Tasten aktiv)
+  - 2-Kanllen bearbeitung
+  - min-max Werte bearbeitung mit aktive Speicher moeglichkeit
+  - Fehler bearbeitung - paramater lesen (meldung mit fensetr)
+  - Automatische Parameter aenderung am Start fuer Differenz messun (Geschwindigkeit)
+  - "Messaufgabe" statisch ausgegraut und nicht editierbar.
+  - kleine fixen
+- vorbereitunng fuer messwerte lesen
+
+### **FW ver 0.8.0.2 / 21.05.2021: [download C1202.bin](https://github.com/k-szczeciak/C1202RelOpen/raw/master/0.8.0.2/C1202.bin)**
 - bugfix - wizzard, kein einheit auswahl
 - N1702 VSS parameter lesen und zeigen
 - Neu N1700 PC SW anpassung:
