@@ -1,5 +1,29 @@
 
 # Millimar Software C1202, Incremntal module
+
+### **FW ver 0.8.0.5 / 10.06.2021: [download C1202.bin](https://github.com/k-szczeciak/C1202RelOpen/raw/master/0.8.0.5/C1202.bin)**
+- fix von 0.7.9.0:
+  - Werte plausiobilitaet proefung, keine Diskette u. blinkende Pfeil wenn werten sind nicht plausibel
+  - kundenkorrektur duerfuehrung falsches Fehler (timeout fenster)
+- Referenz Marke bearbeitung und auf dem Messanzeige zeigen
+- Marnet Fehler reaktion modulen:
+  - zeigen als rotepunkt in messmodulen
+  - 10 leztze Fehler registrieren
+  - diese fehler in Info-seite wird uter der Taste T5 gezeigt
+- Lesen drehgeber:
+  - singleturm mit und ohne referenzmakre
+  - multiturn - anzahle umdrehungen sind multipliziert 360 Grad
+- Formel anpassung nach drehgeber aktivierung:
+  - Verknuepfung limitiert wenn einkanal ist linear und andere ist rotativ. Wenn beide dleis sind, verknoepfunk ist nicht limitiert
+  - Funktion fuer Merkmale wenn in verknoepfung drehgeber implementiert ist, ATAN ist nicht auswahlbar
+- Menu anpassug fuer Drehgeber: winkeleincheiten sind aktiv
+- fix: diagnosis Zaehler nullen vervbessert
+- in Menue als parameter ist auch sensortyp gezeigt, entweder Drehgeber oder Lilnear Tatser
+- neue skalen fuer inkremental modul:
+  - fuer laenge: zusaezliche 30 mm, 
+  - fuer winkel: zusaetzliche 360 Grad
+- andere fixen und verbesserungen
+
 ### **FW ver 0.8.0.4 / 02.06.2021: [download C1202.bin](https://github.com/k-szczeciak/C1202RelOpen/raw/master/0.8.0.4/C1202.bin)**
 - inkrmental: linear werte lesen und zeigen
 - einfache diagnostic ueber MarCom (7 zaehler)
