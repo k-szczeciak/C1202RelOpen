@@ -1,7 +1,32 @@
 
 # Millimar Software C1202, Incremntal module
+### **FW ver 0.8.0.6 / 17.06.2021: [download C1202.bin](https://github.com/k-szczeciak/C1202RelOpen/raw/master/0.8.0.6/C1202.bin)**
+- fix: Kundekorrektur korrigiert (4-auswahl)
+- neu: Referenzpunkt logik angepasst
+- neu: gruen/rot punk an Anzeige gaeendert:
+  - Gruen wenn messung leuft,
+  - Dunkelrot wenn messung angehaltet,
+  - blinkend Gruen oder Dunkelrot wenn Inkremental Taster nicht referenziert
+  - Rot wenn Messmodul Fehler geschickt hat
+- neu: dynamische Menu: 
+  - "Tastertyp" (Induktive oder pneumatische Modulen) oder "Sensortyp" (Inkremntale Modulen)
+      je nach dem welches Messmodul angeschlossen ist
+  - Kundenkorrektur wenn Inkrementalmodul angeschlossen ist - wird nicht angezeigt
+  - Aufloesung erhoerung fuer Inkrementalmodul (wie bei HR modul)
+  - multiturn korigiert
+  - Einrichten fuer drehgeber angepasst
+  - korrigiert und verbessert analoganzeige skala fuer Inch und Radiant,
+    - skala "ticks" briete angepasst fuer alle Einheten
+  - Fehlermeldungsfenster in Messeuzeige fuer Messmodul Fehler:
+    - neu Fehlermesde fenster
+    - bis 10 letzen Fehler wird gezeigt.
+    - fehleranzeige wechsel nach jede sekunde
+    - Fehelrhaftekanal wird gezeigt
+    - normalarbeit nach fehlervermeidung (wenn meesmodul erlaubt)
+    - fehlerbeschreibung und vermoetliche urhsache
 
 ### **FW ver 0.8.0.5 / 10.06.2021: [download C1202.bin](https://github.com/k-szczeciak/C1202RelOpen/raw/master/0.8.0.5/C1202.bin)**
+
 - fix von 0.7.9.0:
   - Werte plausiobilitaet proefung, keine Diskette u. blinkende Pfeil wenn werten sind nicht plausibel
   - kundenkorrektur duerfuehrung falsches Fehler (timeout fenster)
@@ -98,16 +123,16 @@ FW ver 0.7.8.9A / 29.04.2021: [download C1202.bin](https://github.com/k-szczecia
 - automatisch testen AT?STD - werkseintellung
 - AT?SCR=filename.bmp
 - send UART message on Hard Fault
-  
+
 FW ver 0.7.8.9 / 21.04.2021:  [download C1202.bin](https://github.com/k-szczeciak/C1202RelOpen/raw/master/0.7.8.9/C1202.bin)
 - bug fix, wenn Anzahl Merkmall ist 1 - C1202 startet nicht.
-  
+
 FW ver 0.7.8.8A / 19.04.2021:  [download C1202.bin](https://github.com/k-szczeciak/C1202RelOpen/raw/master/0.7.8.8A/C1202.bin)
 - Sprache: Spanish aktualisiert (mit Font)
 - fix, bug-ID: 45848 - meister Wert editierung verbesserung. Jetzt kann man erst kleinerwert editieren statt groser als erster schritt. Wird das nicht direkt mit default Werte umgesetzt. Werte Plausibilitaetproefung wird erst bevor speicher geprueft und Wertenm werden nicht automatisch ungestzt, sondern gelb-markiert. Diese Funktion war nur gedacht fuer parameter von par-datei lesen (SD-speicherkarte). Und so jetzt funktioniert.
 - Gleiche Logik fuer Toleranz und Warngrenzen ralisiert
 - Artikelnummer Aktualisiert fuer: 5312025
-  
+
 FW ver 0.7.8.8 / 15.04.2021:  [download C1202.bin](https://github.com/k-szczeciak/C1202RelOpen/raw/master/0.7.8.8/C1202.bin)
 - seriennummer und artikelnummer werden nicht von par-datei uebernohmen
 - anpassung fuer fertigungstools: Seriennummer erset FW ladung: 0 und erste start MarCom mit 4600bps (das kommt von C1200) sn-werkzeug bps ist festkodiert
