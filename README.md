@@ -104,6 +104,14 @@
 - neu Tasteryp menu fuer inkremental modul
 
 # Millimar Software C1202, Inductive modules
+FW ver 1.0.0.1 / 01.07.2021: [download C1202.bin](https://github.com/k-szczeciak/C1202RelOpen/raw/master/1.0.0.1/C1202.bin)
+- Werkseintellung ohne software reset: nach automatisches restart nicht immer hochgelaufen, neu:
+  - nach werkseinstellung, reset wird nicht durchdefuehrt, statt wizzard startet dirakt
+- fix 4800 kbps bei ersten start
+
+FW ver 1.0.0.0 / 29.06.2021: [download C1202.bin](https://github.com/k-szczeciak/C1202RelOpen/raw/master/1.0.0.0/C1202.bin)
+- Name änderung
+- 
 FW ver 0.7.9.0 / 02.06.2021: [download C1202.bin](https://github.com/k-szczeciak/C1202RelOpen/raw/master/0.7.9.0/C1202.bin)
 - neues Bedienkonzept für Formel, Toleranz&Warngrenzen und 2P-meister:
   - diskette für speicher

@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Millimar Software C1202&comma; Incremntal module</title>
+        <style>
+</style>
+        
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/markdown.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/highlight.css">
+<style>
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif;
+                font-size: 14px;
+                line-height: 1.6;
+            }
+        </style>
+        <style>
+.task-list-item { list-style-type: none; } .task-list-item-checkbox { margin-left: -20px; vertical-align: middle; }
+</style>
+        
+        
+        
+    </head>
+    <body class="vscode-body vscode-light">
+        <h1 id="millimar-software-c1202-incremntal-module">Millimar Software C1202, Incremntal module</h1>
+<h3 id="fw-ver-0806--17062021-download-c1202bin"><strong>FW ver 0.8.0.6 / 17.06.2021: <a href="https://github.com/k-szczeciak/C1202RelOpen/raw/master/0.8.0.6/C1202.bin">download C1202.bin</a></strong></h3>
+<ul>
+<li>fix: Kundekorrektur korrigiert (4-auswahl)</li>
+<li>neu: Referenzpunkt logik angepasst</li>
+<li>neu: gruen/rot punk an Anzeige gaeendert:
+<ul>
+<li>Gruen wenn messung leuft,</li>
+<li>Dunkelrot wenn messung angehaltet,</li>
+<li>blinkend Gruen oder Dunkelrot wenn Inkremental Taster nicht referenziert</li>
+<li>Rot wenn Messmodul Fehler geschickt hat</li>
+</ul>
+</li>
+<li>neu: dynamische Menu:
+<ul>
+<li>&quot;Tastertyp&quot; (Induktive oder pneumatische Modulen) oder &quot;Sensortyp&quot; (Inkremntale Modulen)
+je nach dem welches Messmodul angeschlossen ist</li>
+<li>Kundenkorrektur wenn Inkrementalmodul angeschlossen ist - wird nicht angezeigt</li>
+<li>Aufloesung erhoerung fuer Inkrementalmodul (wie bei HR modul)</li>
+<li>multiturn korigiert</li>
+<li>Einrichten fuer drehgeber angepasst</li>
+<li>korrigiert und verbessert analoganzeige skala fuer Inch und Radiant,
+<ul>
+<li>skala &quot;ticks&quot; briete angepasst fuer alle Einheten</li>
+</ul>
+</li>
+<li>Fehlermeldungsfenster in Messeuzeige fuer Messmodul Fehler:
+<ul>
+<li>neu Fehlermesde fenster</li>
+<li>bis 10 letzen Fehler wird gezeigt.</li>
+<li>fehleranzeige wechsel nach jede sekunde</li>
+<li>Fehelrhaftekanal wird gezeigt</li>
+<li>normalarbeit nach fehlervermeidung (wenn meesmodul erlaubt)</li>
+<li>fehlerbeschreibung und vermoetliche urhsache</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="fw-ver-0805--10062021-download-c1202bin"><strong>FW ver 0.8.0.5 / 10.06.2021: <a href="https://github.com/k-szczeciak/C1202RelOpen/raw/master/0.8.0.5/C1202.bin">download C1202.bin</a></strong></h3>
+<ul>
+<li>fix von 0.7.9.0:
+<ul>
+<li>Werte plausiobilitaet proefung, keine Diskette u. blinkende Pfeil wenn werten sind nicht plausibel</li>
+<li>kundenkorrektur duerfuehrung falsches Fehler (timeout fenster)</li>
+</ul>
+</li>
+<li>Referenz Marke bearbeitung und auf dem Messanzeige zeigen</li>
+<li>Marnet Fehler reaktion modulen:
+<ul>
+<li>zeigen als rotepunkt in messmodulen</li>
+<li>10 leztze Fehler registrieren</li>
+<li>diese fehler in Info-seite wird uter der Taste T5 gezeigt</li>
+</ul>
+</li>
+<li>Lesen drehgeber:
+<ul>
+<li>singleturm mit und ohne referenzmakre</li>
+<li>multiturn - anzahle umdrehungen sind multipliziert 360 Grad</li>
+</ul>
+</li>
+<li>Formel anpassung nach drehgeber aktivierung:
+<ul>
+<li>Verknuepfung limitiert wenn einkanal ist linear und andere ist rotativ. Wenn beide dleis sind, verknoepfunk ist nicht limitiert</li>
+<li>Funktion fuer Merkmale wenn in verknoepfung drehgeber implementiert ist, ATAN ist nicht auswahlbar</li>
+</ul>
+</li>
+<li>Menu anpassug fuer Drehgeber: winkeleincheiten sind aktiv</li>
+<li>fix: diagnosis Zaehler nullen vervbessert</li>
+<li>in Menue als parameter ist auch sensortyp gezeigt, entweder Drehgeber oder Lilnear Tatser</li>
+<li>neue skalen fuer inkremental modul:
+<ul>
+<li>fuer laenge: zusaezliche 30 mm,</li>
+<li>fuer winkel: zusaetzliche 360 Grad</li>
+</ul>
+</li>
+<li>andere fixen und verbesserungen</li>
+</ul>
+<h3 id="fw-ver-0804--02062021-download-c1202bin"><strong>FW ver 0.8.0.4 / 02.06.2021: <a href="https://github.com/k-szczeciak/C1202RelOpen/raw/master/0.8.0.4/C1202.bin">download C1202.bin</a></strong></h3>
+<ul>
+<li>inkrmental: linear werte lesen und zeigen</li>
+<li>einfache diagnostic ueber MarCom (7 zaehler)</li>
+<li>Keine Antwort von Modul Fehler Nachricht Anzeige</li>
+<li>Forel, T&amp;W und 2P-Meister: Paremeter geendert in Titel Anzeige, von &quot;*&quot; fuer Farbe Grau</li>
+<li>Forel, T&amp;W und 2P-Meister: Parameter editierung: pfeil bleibt permanent</li>
+<li>Inkremental modul Parameter: springen ueber ausgegeute Werte</li>
+<li>Inkremental modul Parameter: Referenz punkte logik: erst muss Referenz Punkte bearbeitung aktiviert sein</li>
+<li>INkremental Anzeige: blinkende Kreiss wenn Taster nicht referneziert ist</li>
+</ul>
+<h3 id="fw-ver-0803--28052021-download-c1202bin"><strong>FW ver 0.8.0.3 / 28.05.2021: <a href="https://github.com/k-szczeciak/C1202RelOpen/raw/master/0.8.0.3/C1202.bin">download C1202.bin</a></strong></h3>
+<ul>
+<li>demos fuer Geschwindigkeit und Umdrehungen entfernt</li>
+<li>neues bedien konzept fuer Formel, Toleranz&amp;Wangrenzen und 2P-Meister implementiert</li>
+<li>Incremental Modul parametrierung verbesserung:
+<ul>
+<li>Shift Phase correction prozedure implementiert (ablaufzeit, neu wert anzeige, fehler anzeige, Tasten aktiv)</li>
+<li>2-Kanllen bearbeitung</li>
+<li>min-max Werte bearbeitung mit aktive Speicher moeglichkeit</li>
+<li>Fehler bearbeitung - paramater lesen (meldung mit fensetr)</li>
+<li>Automatische Parameter aenderung am Start fuer Differenz messun (Geschwindigkeit)</li>
+<li>&quot;Messaufgabe&quot; statisch ausgegraut und nicht editierbar.</li>
+<li>kleine fixen</li>
+</ul>
+</li>
+<li>vorbereitunng fuer messwerte lesen</li>
+</ul>
+<h3 id="fw-ver-0802--21052021-download-c1202bin"><strong>FW ver 0.8.0.2 / 21.05.2021: <a href="https://github.com/k-szczeciak/C1202RelOpen/raw/master/0.8.0.2/C1202.bin">download C1202.bin</a></strong></h3>
+<ul>
+<li>bugfix - wizzard, kein einheit auswahl</li>
+<li>N1702 VSS parameter lesen und zeigen</li>
+<li>Neu N1700 PC SW anpassung:
+<ul>
+<li>Anzahl Referenzpunte, von Liste auf Checkbox</li>
+<li>gitterkonstante mit 100um genauigkeit</li>
+<li>aphaengigkeiten zwischen &quot;Count ref. points&quot; und &quot;Reference punkt. processing&quot;</li>
+<li>phase shift correction Wert anzeige</li>
+</ul>
+</li>
+<li>parameter aenden, senden und speicher in Messmodul.</li>
+<li>Ziffer editierung richtung zurueckumgesetzt</li>
+<li>Formel beispiel fuer geschwidigkeitund Anzahl Umdreungen</li>
+</ul>
+<hr>
+<h3 id="fw-ver-0801--06052021-download-c1202bin"><strong>FW ver 0.8.0.1 / 06.05.2021: <a href="https://github.com/k-szczeciak/C1202RelOpen/raw/master/0.8.0.1/C1202.bin">download C1202.bin</a></strong></h3>
+<ul>
+<li>Inkremental Modul erkennung und bearbeitung, neu artikelnummer, modul typ evaluierung nach Artickelnummer nicht Name</li>
+<li>Tastertyp menu angepasst fuer modulparamater nach PC-SW N1700:</li>
+<li>namen angepasst</li>
+<li>Listen angepasst,</li>
+<li>dynamische menu:
+<ul>
+<li>wechsel zwischen &quot;gitter Konstante&quot; und &quot;inkremente pro umdreh&quot;, &quot;Anzahl Referenzpunkte pro Umdreh&quot; und &quot;Distand zwischen Referenzpunke&quot; nach sensorTyp: &quot;Linar&quot; und &quot;Rotary&quot;</li>
+<li>nicht aktive parameter</li>
+<li>phase shift korrektur durchfuhren</li>
+<li>interaktive Referenzpunkt proc nach zustand der Anzahl Referenzpunkte</li>
+<li>kries-navigation fuer parameter</li>
+</ul>
+</li>
+<li>Anzeige parameter neu: (1) Position, (2) Geschwindigkeit, (3) Anzahl Umdrehungen</li>
+<li>Anpassung einheit in Messanzeige</li>
+<li>Kreiss - scrollen in Menu</li>
+</ul>
+<hr>
+<h3 id="fw-ver-0800--06052021-download-c1202bin"><strong>FW ver 0.8.0.0 / 06.05.2021: <a href="https://github.com/k-szczeciak/C1202RelOpen/raw/master/0.8.0.0/C1202.bin">download C1202.bin</a></strong></h3>
+<ul>
+<li>neu Tasteryp menu fuer inkremental modul</li>
+</ul>
+<h1 id="millimar-software-c1202-inductive-modules">Millimar Software C1202, Inductive modules</h1>
+<p>FW ver 1.0.0.1 / 01.07.2021: <a href="https://github.com/k-szczeciak/C1202RelOpen/raw/master/1.0.0.1/C1202.bin">download C1202.bin</a></p>
+<ul>
+<li>Werkseintellung ohne software reset: nach automatisches restart nicht immer hochgelaufen, neu:
+<ul>
+<li>nach werkseinstellung, reset wird nicht durchdefuehrt, statt wizzard startet dirakt</li>
+</ul>
+</li>
+<li>fix 4800 kbps bei ersten start</li>
+</ul>
+<p>FW ver 1.0.0.0 / 29.06.2021: <a href="https://github.com/k-szczeciak/C1202RelOpen/raw/master/1.0.0.0/C1202.bin">download C1202.bin</a></p>
+<ul>
+<li>Name änderung</li>
+<li></li>
+</ul>
+<p>FW ver 0.7.9.0 / 02.06.2021: <a href="https://github.com/k-szczeciak/C1202RelOpen/raw/master/0.7.9.0/C1202.bin">download C1202.bin</a></p>
+<ul>
+<li>neues Bedienkonzept für Formel, Toleranz&amp;Warngrenzen und 2P-meister:
+<ul>
+<li>diskette für speicher</li>
+<li>parameter änderung überwachung</li>
+<li>binkende pfeil nach oben wenn parametern geändert sind</li>
+<li>graue titel wenn parametern geändert sind</li>
+</ul>
+</li>
+<li>menu bedienung &quot;im kreiss&quot;</li>
+<li>modul antwort WD überwachung mit Meldungsfenster</li>
+<li>dignose zehler implementiert, über MarCom verfügbar</li>
+</ul>
+<p>FW ver 0.7.8.9B / 10.05.2021: <a href="https://github.com/k-szczeciak/C1202RelOpen/raw/master/0.7.8.9B/C1202.bin">download C1202.bin</a></p>
+<ul>
+<li>werkseinstellung delay</li>
+<li>Fussschalter - am ersten start avtiviert</li>
+<li>MarCom baudrate 4800bps am ersten start entfernt</li>
+</ul>
+<p>FW ver 0.7.8.9A / 29.04.2021: <a href="https://github.com/k-szczeciak/C1202RelOpen/raw/master/0.7.8.9A/C1202.bin">download C1202.bin</a></p>
+<ul>
+<li>automatisch testen AT?STD - werkseintellung</li>
+<li>AT?SCR=filename.bmp</li>
+<li>send UART message on Hard Fault</li>
+</ul>
+<p>FW ver 0.7.8.9 / 21.04.2021:  <a href="https://github.com/k-szczeciak/C1202RelOpen/raw/master/0.7.8.9/C1202.bin">download C1202.bin</a></p>
+<ul>
+<li>bug fix, wenn Anzahl Merkmall ist 1 - C1202 startet nicht.</li>
+</ul>
+<p>FW ver 0.7.8.8A / 19.04.2021:  <a href="https://github.com/k-szczeciak/C1202RelOpen/raw/master/0.7.8.8A/C1202.bin">download C1202.bin</a></p>
+<ul>
+<li>Sprache: Spanish aktualisiert (mit Font)</li>
+<li>fix, bug-ID: 45848 - meister Wert editierung verbesserung. Jetzt kann man erst kleinerwert editieren statt groser als erster schritt. Wird das nicht direkt mit default Werte umgesetzt. Werte Plausibilitaetproefung wird erst bevor speicher geprueft und Wertenm werden nicht automatisch ungestzt, sondern gelb-markiert. Diese Funktion war nur gedacht fuer parameter von par-datei lesen (SD-speicherkarte). Und so jetzt funktioniert.</li>
+<li>Gleiche Logik fuer Toleranz und Warngrenzen ralisiert</li>
+<li>Artikelnummer Aktualisiert fuer: 5312025</li>
+</ul>
+<p>FW ver 0.7.8.8 / 15.04.2021:  <a href="https://github.com/k-szczeciak/C1202RelOpen/raw/master/0.7.8.8/C1202.bin">download C1202.bin</a></p>
+<ul>
+<li>seriennummer und artikelnummer werden nicht von par-datei uebernohmen</li>
+<li>anpassung fuer fertigungstools: Seriennummer erset FW ladung: 0 und erste start MarCom mit 4600bps (das kommt von C1200) sn-werkzeug bps ist festkodiert</li>
+<li>&quot;Kein modul&quot; verbesserung - screenshot und tastendrueck verbessrung</li>
+</ul>
+<p>FW ver 0.7.8.7 / 13.04.2021: <a href="https://github.com/k-szczeciak/C1202RelOpen/raw/master/0.7.8.7/C1202.bin">download C1202.bin</a></p>
+<ul>
+<li>Erste start verbessert und optimiert: Zeitenm, artikelnummer und seriennummer richtig eingestellt</li>
+<li>eerpom erase moeglich um Erst Start zu simulieren</li>
+</ul>
+
+    </body>
+    </html>
