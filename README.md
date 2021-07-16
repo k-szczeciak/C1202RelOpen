@@ -1,5 +1,66 @@
 
 # Millimar Software C1202, Incremntal module
+### **FW ver 0.8.0.9 / 16.07.2021: [download C1202.bin](https://github.com/k-szczeciak/C1202RelOpen/raw/master/0.8.0.9/C1202.bin)**
+- Einrichten neue Name: "SENSOR" statt "ABSOLUTE"
+- Inkremental modul - Parameter: Analoge werte mit Max Anzeige ("gitterkonstante", "ink. pro. Umdreh", "Anzahl Ref. pro U.", "Dist. zwisch. ref.")
+- Referenzierung behoben (Messanzeige und Einrichten)
+- Fehler reset in Einrichten unter Tatse 5
+- Modulfehler (bzw. Kanalfehler) wird als ERR5 ("Daten unvollständig") in MarCom uebertragen statt messwert 
+- Inkrementalsensor automatisch Aufloesung anpassung nach dem Gitter konstante und Interpolation Faktor:
+  - gilt nur fuer Linear taster und fuer laenge aufloesung
+  - berechnet wird nach: resol_f [mm] = gitterkonstante [um] / interpolation_faktor / 1000
+      ```c
+  	  // resolution boundaries:
+	    if (resol_f >= 0.005)
+		    result = 0; // i.e. 0.01 mm
+	    else if ( (resol_f < 0.005) && (resol_f >= 0.0005) )
+		    result = 1; // i.e. 0.001 mm
+	    else if ( (resol_f < 0.0005) && (resol_f >= 0.00005) )
+		    result = 2; // i.e. 0.0001 mm
+	    else if (resol_f < 0.00005)
+		    result = 3; // i.e. 0.00001 mm
+	    else
+		    result = 3; // i.e. 0.00001 mm
+    ```
+  - auf groesste mogliche Aufloesung es wurde automatisch gaendert
+  - wenn 2 kanaele sind in Verknoepfung: Groeste afulesung ausgewertet ist
+  - Aufloesung liste ist automatisch gekurtzt
+- Phasenkorrektur ist nicht brechbar moeglich (messmodul in phansenkorrektur marnet schnittstelle ist nicht aktiv)
+- Firmware update von menu:
+  - dateinahme mit verion info in menu angezeigt (jetzt alle, in Zukunft nur neueste FW wird gezeigt)
+  - dateiname wird geprueft ("z.B.: C1202_FW_0.8.0.9.bin")
+  - nach dem langetsasterdruck wird restet drurgefuehrt
+  - Taste 1 ist nur fuer bestrommung sicherheit
+  - C1202.bin wird nicht in menu gezeigt
+
+### **FW ver 0.8.0.8 / 09.07.2021: [download C1202.bin](https://github.com/k-szczeciak/C1202RelOpen/raw/master/0.8.0.8/C1202.bin)**
+- fix - Inkrmentalmodul parameter in "Gitterkonstante", "Inkremente pro umdrehung", "Anzahl Ref. pro U." u. "Dist. zwisch. Ref." editierung mit maximale Werte verbessert
+- fuer induktive module gruenepunkt nicht blinkend
+- Inkrementalmodul Parameter - positionierungs verbessert
+- Inkrementalmodul Parameter - parmater speicher detektion verbessert
+- fix - pinAccess wenn eingestellte pin ist 0000, wird auch gefragt
+- "Fehlermeldungsfenster Aktiv." von Setup 1 -> Setup 3 
+- alle neue komentaere (Inkrementalmodul parameter und fehleranzeige) von wuerterbuch gezeigt (jetzt nur Deutsch und englisch)
+- erste start fehler erkennung und referenzierung - fix
+- Inkrementalmodul parameter Tastenbeschreibung fuer "checkbox" angepasst (wie in Fussschalter)
+- Werkseinstellung: modul wird nicht gefragt nach parametern die sind nicht modulrelevant, dadurch kein lesefehler wird nicht gezeigt
+- Messanzeige meldefenster management, bzw. Fehler meldungen
+- speicher optimalisierung
+
+
+### **FW ver 0.8.0.7 / 25.06.2021: [download C1202.bin](https://github.com/k-szczeciak/C1202RelOpen/raw/master/0.8.0.7/C1202.bin)**
+- Tolernaz und Warngrenzen fuer winkel in inkremental modul
+- optimisierung von Inkrementalmodul parameter behandlung entMultiPar() modul:
+  - neu state-basierte struktur
+  - Leistung, speicher und zuverlaessigkeit verbesserung
+  - Modul antwort fehler bearbeitung (wenn modul shickt keine antwort - wird nicht gefroren)
+  - Phasekorrektur durchfuhrung fehlerbehandlung verbessert
+  - Phasenkorrektur durchfuehrung anhalten moeglichkeit (anhalten von Inkrementalmodul ist nicht moeglich ?)
+- Inkremantal modul Fehler fenster Nachricht geaendert
+- Zaehler reset in "Absolute" mode unter Taste 5
+- Name fuer Einrichten geaenderet nur fuer Inkremntal modul
+- Fix: induktivmessmodul: zeigt Messwerte und Referenzpunkt ist statisch
+
 ### **FW ver 0.8.0.6 / 17.06.2021: [download C1202.bin](https://github.com/k-szczeciak/C1202RelOpen/raw/master/0.8.0.6/C1202.bin)**
 - fix: Kundekorrektur korrigiert (4-auswahl)
 - neu: Referenzpunkt logik angepasst
