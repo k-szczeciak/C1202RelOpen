@@ -1,10 +1,20 @@
 
 # Millimar Software C1202, Incremntal module
+### **FW ver 0.8.1.0 / 16.07.2021: [download C1202.bin](https://github.com/k-szczeciak/C1202RelOpen/raw/master/0.8.1.0/C1202.bin)**
+- Firmware Update Dateiname verlaengfert, Standart name: "C1200_FW_x.x.x.x.bin"
+- Fix: Inkremental Sensor Parameter: Speicher Ikone war nicht imme gueltig - korrigiert
+- Fix: Inkremental Sensor Phasenkorrektur durchlauf korrigiert - neu Wert Speicher, specher ermoeglich und Sensortyp nach phasenkorrektur wechsel
+- Inkremental Sensor - Werte editierung Farbe Gelb nach ungueltige Werte
+- Inkremental Sensor Parameter - von name geendert: "count ref points" fuer "Ref. Points  > 1"
+- Menue - name geendert: von "Tastatur / Menu sperre" fuer "Menue sperre"
+- Firmware Update ohne Datei loeschen - Dateiname nach aktualisierung bleibt ungeaendert
+- Firmware update: bevore Aktualisierung, wird Aktuele FW backup gemacht und auf SD-karte gespeichert under name: "C1202_FW_x.x.x.x_bak.bin"
+  
 ### **FW ver 0.8.0.9 / 16.07.2021: [download C1202.bin](https://github.com/k-szczeciak/C1202RelOpen/raw/master/0.8.0.9/C1202.bin)**
 - Einrichten neue Name: "SENSOR" statt "ABSOLUTE"
 - Inkremental modul - Parameter: Analoge werte mit Max Anzeige ("gitterkonstante", "ink. pro. Umdreh", "Anzahl Ref. pro U.", "Dist. zwisch. ref.")
 - Referenzierung behoben (Messanzeige und Einrichten)
-- Fehler reset in Einrichten unter Tatse 5
+- Fehler Anzeige sebst-reset ohne neistart (neue logik) und Fehler reset in Einrichten unter Tatse 5
 - Modulfehler (bzw. Kanalfehler) wird als ERR5 ("Daten unvollständig") in MarCom uebertragen statt messwert 
 - Inkrementalsensor automatisch Aufloesung anpassung nach dem Gitter konstante und Interpolation Faktor:
   - gilt nur fuer Linear taster und fuer laenge aufloesung
