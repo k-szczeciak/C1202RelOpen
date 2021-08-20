@@ -1,5 +1,28 @@
-
+[all versions](https://github.com/k-szczeciak/C1202RelOpen)
 # Millimar Software C1202, Incremntal module
+### **FW ver 0.8.1.2 / 20.08.2021: [download C1202.bin](https://github.com/k-szczeciak/C1202RelOpen/raw/master/0.8.1.2/C1202.bin)**
+- phasenkorrektur speicher verbessert, nach dem korrekturablauf wird automatisch in modul gespeichert. Fuer das richtig zu funktionieren ein neues fw ist notwendig fuer inkremntalmodul, Version 1.15a 
+- Inkremental modul Paramater speicher verbessert
+- Messmodulfehler in Einrichten Reset-Taste Rot markiert
+- "atan" funktion einstellung, prameter umstellung auf Winkel in Induktive Modulen behoben 
+- 100Hz abtstrate implementiert fuer alle funktionen
+- Sprache umstellung fuer alle paremeter  
+- Laengere Dateinamen fuer Modul programieren
+- speicher optimierung
+
+### **FW ver 0.8.1.1 / 13.08.2021: [download C1202.bin](https://github.com/k-szczeciak/C1202RelOpen/raw/master/0.8.1.1/C1202.bin)**
+- Name "preparing for backup" auf "Creating Backup" geendert
+- Wueterbuch aktualisiert fuer FW update und inkremental modul, neue Begrife:
+- "Backup vorbereitung..." in FW update 
+- "Neu Wert ist:" in phase correction ablauf
+- "Update mit:" in FW update
+- "Drucken und Halten beide Taste" nin FW update
+- "Neu Dateiname:" in Parameterverwalten
+- Speicher in Inkrementalmodul Parameter verbessert
+- FW update Tasterhintengrund fuer neustart auf rot geendert
+- FW update, "Backup vorbereitung..." Fortschrittsanzeige
+- optimalisierung
+
 ### **FW ver 0.8.1.0 / 16.07.2021: [download C1202.bin](https://github.com/k-szczeciak/C1202RelOpen/raw/master/0.8.1.0/C1202.bin)**
 - Firmware Update Dateiname verlaengfert, Standart name: "C1200_FW_x.x.x.x.bin"
 - Fix: Inkremental Sensor Parameter: Speicher Ikone war nicht imme gueltig - korrigiert
@@ -9,7 +32,7 @@
 - Menue - name geendert: von "Tastatur / Menu sperre" fuer "Menue sperre"
 - Firmware Update ohne Datei loeschen - Dateiname nach aktualisierung bleibt ungeaendert
 - Firmware update: bevore Aktualisierung, wird Aktuele FW backup gemacht und auf SD-karte gespeichert under name: "C1202_FW_x.x.x.x_bak.bin"
-  
+
 ### **FW ver 0.8.0.9 / 16.07.2021: [download C1202.bin](https://github.com/k-szczeciak/C1202RelOpen/raw/master/0.8.0.9/C1202.bin)**
 - Einrichten neue Name: "SENSOR" statt "ABSOLUTE"
 - Inkremental modul - Parameter: Analoge werte mit Max Anzeige ("gitterkonstante", "ink. pro. Umdreh", "Anzahl Ref. pro U.", "Dist. zwisch. ref.")
@@ -95,9 +118,10 @@
     - Fehelrhaftekanal wird gezeigt
     - normalarbeit nach fehlervermeidung (wenn meesmodul erlaubt)
     - fehlerbeschreibung und vermoetliche urhsache
+  
+
 
 ### **FW ver 0.8.0.5 / 10.06.2021: [download C1202.bin](https://github.com/k-szczeciak/C1202RelOpen/raw/master/0.8.0.5/C1202.bin)**
-
 - fix von 0.7.9.0:
   - Werte plausiobilitaet proefung, keine Diskette u. blinkende Pfeil wenn werten sind nicht plausibel
   - kundenkorrektur duerfuehrung falsches Fehler (timeout fenster)
@@ -119,6 +143,7 @@
   - fuer laenge: zusaezliche 30 mm, 
   - fuer winkel: zusaetzliche 360 Grad
 - andere fixen und verbesserungen
+
 
 ### **FW ver 0.8.0.4 / 02.06.2021: [download C1202.bin](https://github.com/k-szczeciak/C1202RelOpen/raw/master/0.8.0.4/C1202.bin)**
 - inkrmental: linear werte lesen und zeigen
@@ -173,50 +198,3 @@
 ---
 ### **FW ver 0.8.0.0 / 06.05.2021: [download C1202.bin](https://github.com/k-szczeciak/C1202RelOpen/raw/master/0.8.0.0/C1202.bin)**
 - neu Tasteryp menu fuer inkremental modul
-
-# Millimar Software C1202, Inductive modules
-FW ver 1.0.0.1 / 01.07.2021: [download C1202.bin](https://github.com/k-szczeciak/C1202RelOpen/raw/master/1.0.0.1/C1202.bin)
-- Werkseintellung ohne software reset: nach automatisches restart nicht immer hochgelaufen, neu:
-  - nach werkseinstellung, reset wird nicht durchdefuehrt, statt wizzard startet dirakt
-- fix 4800 kbps bei ersten start
-
-FW ver 1.0.0.0 / 29.06.2021: [download C1202.bin](https://github.com/k-szczeciak/C1202RelOpen/raw/master/1.0.0.0/C1202.bin)
-- Name änderung
-- 
-FW ver 0.7.9.0 / 02.06.2021: [download C1202.bin](https://github.com/k-szczeciak/C1202RelOpen/raw/master/0.7.9.0/C1202.bin)
-- neues Bedienkonzept für Formel, Toleranz&Warngrenzen und 2P-meister:
-  - diskette für speicher
-  - parameter änderung überwachung
-  - binkende pfeil nach oben wenn parametern geändert sind
-  - graue titel wenn parametern geändert sind
-- menu bedienung "im kreiss"
-- modul antwort WD überwachung mit Meldungsfenster
-- dignose zehler implementiert, über MarCom verfügbar
-
-FW ver 0.7.8.9B / 10.05.2021: [download C1202.bin](https://github.com/k-szczeciak/C1202RelOpen/raw/master/0.7.8.9B/C1202.bin)
-- werkseinstellung delay
-- Fussschalter - am ersten start avtiviert
-- MarCom baudrate 4800bps am ersten start entfernt
-
-FW ver 0.7.8.9A / 29.04.2021: [download C1202.bin](https://github.com/k-szczeciak/C1202RelOpen/raw/master/0.7.8.9A/C1202.bin)
-- automatisch testen AT?STD - werkseintellung
-- AT?SCR=filename.bmp
-- send UART message on Hard Fault
-
-FW ver 0.7.8.9 / 21.04.2021:  [download C1202.bin](https://github.com/k-szczeciak/C1202RelOpen/raw/master/0.7.8.9/C1202.bin)
-- bug fix, wenn Anzahl Merkmall ist 1 - C1202 startet nicht.
-
-FW ver 0.7.8.8A / 19.04.2021:  [download C1202.bin](https://github.com/k-szczeciak/C1202RelOpen/raw/master/0.7.8.8A/C1202.bin)
-- Sprache: Spanish aktualisiert (mit Font)
-- fix, bug-ID: 45848 - meister Wert editierung verbesserung. Jetzt kann man erst kleinerwert editieren statt groser als erster schritt. Wird das nicht direkt mit default Werte umgesetzt. Werte Plausibilitaetproefung wird erst bevor speicher geprueft und Wertenm werden nicht automatisch ungestzt, sondern gelb-markiert. Diese Funktion war nur gedacht fuer parameter von par-datei lesen (SD-speicherkarte). Und so jetzt funktioniert.
-- Gleiche Logik fuer Toleranz und Warngrenzen ralisiert
-- Artikelnummer Aktualisiert fuer: 5312025
-
-FW ver 0.7.8.8 / 15.04.2021:  [download C1202.bin](https://github.com/k-szczeciak/C1202RelOpen/raw/master/0.7.8.8/C1202.bin)
-- seriennummer und artikelnummer werden nicht von par-datei uebernohmen
-- anpassung fuer fertigungstools: Seriennummer erset FW ladung: 0 und erste start MarCom mit 4600bps (das kommt von C1200) sn-werkzeug bps ist festkodiert
-- "Kein modul" verbesserung - screenshot und tastendrueck verbessrung
-
-FW ver 0.7.8.7 / 13.04.2021: [download C1202.bin](https://github.com/k-szczeciak/C1202RelOpen/raw/master/0.7.8.7/C1202.bin)
-- Erste start verbessert und optimiert: Zeitenm, artikelnummer und seriennummer richtig eingestellt
-- eerpom erase moeglich um Erst Start zu simulieren
