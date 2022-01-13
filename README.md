@@ -1,5 +1,15 @@
 [all versions](https://github.com/k-szczeciak/C1202RelOpen)
 # Millimar Software C1202, Incremntal 
+### **FW ver 0.8.2.8 / 13.01.2022: [download C1202.bin](https://github.com/k-szczeciak/C1202RelOpen/raw/master/0.8.2.8/C1202_FW_0.8.2.8.bin)**
+- x-mass edition entfernt
+- Modul FW evaluierung verbesserung und Info-Seite 
+- 2-Punkt Meister nicht plausieble Werte Meldungsfenster
+  - 2 sekunden Meldungsfenster dauer
+  - Anzeige Welche Merkmal ist nicht palusiebel - 
+- Inkrmentel Modul Fehler quitierung von Messanzeige
+- Wuerterbuch update
+- Meldungsfenster verbesserungen
+  
 ### **FW ver 0.8.2.7 / 24.12.2021: [download C1202.bin](https://github.com/k-szczeciak/C1202RelOpen/raw/master/0.8.2.7/C1202_FW_0.8.2.7.bin)**
 - Drehgeber mit Referenzpunt Fix fuer Extreme Werte (Min, Max)
 - Faktor auch fuer Inkrementale module.
@@ -198,8 +208,6 @@
   - ohne referenzierung, Meister funktionieret genauso wie bei laenge
   - mit referenzierung, Meister bei jede Umdrehung wird zurueckgestzt
   - mit referenzierung und multiturn (anzahl referenzpunkte > 1 = 1): wird meister aktiv verschoben nach umdreung. In dise version funktioniert nur fuer positive werte.
-
-
 
 ### **FW ver 0.8.1.3 / 27.08.2021: [download C1202.bin](https://github.com/k-szczeciak/C1202RelOpen/raw/master/0.8.1.3/C1202_FW_0.8.1.3.bin)**
 - fix: Inkremental sensor Parameter-> "Ref. punkte > 1" mit 3 Merkmale Gefrohene Werte problem behoben.
