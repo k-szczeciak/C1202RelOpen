@@ -1,15 +1,15 @@
 [all versions](https://github.com/k-szczeciak/C1202RelOpen)
 # Millimar Software C1202, Incremntal 
 ### **FW ver 0.8.2.8 / 13.01.2022: [download C1202.bin](https://github.com/k-szczeciak/C1202RelOpen/raw/master/0.8.2.8/C1202_FW_0.8.2.8.bin)**
-- x-mass edition entfernt
-- Modul FW evaluierung verbesserung und Info-Seite 
-- Info-seite Einzel Pneumatisches modul anzeige Verbesserung
-- 2-Punkt Meister nicht plausieble Werte Meldungsfenster
-  - 2 sekunden Meldungsfenster dauer
-  - Anzeige Welche Merkmal ist nicht palusiebel - 
-- Inkrmentel Modul Fehler quitierung von Messanzeige
-- Wuerterbuch update
-- Meldungsfenster verbesserungen
+- x-mass Edition entfernt
+- Modul FW Evaluierung Verbesserung und Info-Seite
+- Info-seite Einzel Pneumatisches Modul anzeige Verbesserung
+- 2-Punkt Meister nicht plausible Werte Meldungsfenster
+  - 2 Sekunden Meldungsfenster Dauer
+  - Anzeige Welche Merkmal nicht plausibel ist
+- Inkremental Modul Fehler Quittierung von Messanzeige
+- Wörterbuch update
+- Meldungsfenster Verbesserungen
   
 ### **FW ver 0.8.2.7 / 24.12.2021: [download C1202.bin](https://github.com/k-szczeciak/C1202RelOpen/raw/master/0.8.2.7/C1202_FW_0.8.2.7.bin)**
 - Drehgeber mit Referenzpunt Fix fuer Extreme Werte (Min, Max)
