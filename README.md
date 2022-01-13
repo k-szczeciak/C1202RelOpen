@@ -3,6 +3,7 @@
 ### **FW ver 0.8.2.8 / 13.01.2022: [download C1202.bin](https://github.com/k-szczeciak/C1202RelOpen/raw/master/0.8.2.8/C1202_FW_0.8.2.8.bin)**
 - x-mass edition entfernt
 - Modul FW evaluierung verbesserung und Info-Seite 
+- Info-seite Einzel Pneumatisches modul anzeige Verbesserung
 - 2-Punkt Meister nicht plausieble Werte Meldungsfenster
   - 2 sekunden Meldungsfenster dauer
   - Anzeige Welche Merkmal ist nicht palusiebel - 
