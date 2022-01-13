@@ -10,17 +10,17 @@
 - Inkremental Modul Fehler Quittierung von Messanzeige
 - Wörterbuch update
 - Meldungsfenster Verbesserungen
-  
+  ---
 ### **FW ver 0.8.2.7 / 24.12.2021: [download C1202.bin](https://github.com/k-szczeciak/C1202RelOpen/raw/master/0.8.2.7/C1202_FW_0.8.2.7.bin)**
 - Drehgeber mit Referenzpunt Fix fuer Extreme Werte (Min, Max)
 - Faktor auch fuer Inkrementale module.
-
+---
 ### **FW ver 0.8.2.6 / 22.12.2021: [download C1202.bin](https://github.com/k-szczeciak/C1202RelOpen/raw/master/0.8.2.6/C1202_FW_0.8.2.6.bin)**
 - bugfix 46920 - Toleranz ausschalten
 - Drehgeber ohne Referenz Meistern bei maximale anzeigewerte ~19999 grad
 - xmass edition
 - inkremental Modul parameter speicher Fix
-
+---
 ### **FW ver 0.8.2.5 / 09.12.2021: [download C1202.bin](https://github.com/k-szczeciak/C1202RelOpen/raw/master/0.8.2.5/C1202_FW_0.8.2.5.bin)**
 - Deutsch, Englisch und Polish Wuerterbuch update
 - par-Datei lesen sprache wir ignoriert
@@ -29,7 +29,7 @@
 - Update Marker fuer Wizzard und Standard Werte
 - .bin-Datei wird geprueft fuer Grosse und richtige FW evrsion
 - QR-code in Info seite
-
+---
 ### **FW ver 0.8.2.4 / 24.11.2021: [download C1202.bin](https://github.com/k-szczeciak/C1202RelOpen/raw/master/0.8.2.4/C1202_FW_0.8.2.4.bin)**
 - fix: Drehgeber Meister saklierung
 - neu: Dregeber, anpassung der Meister für Bearbeitung mit Refernzpunkt
@@ -37,7 +37,7 @@
 - upgrade: INkremental Modul Parameter Reinfolge änderung
 - fix: Einrichten für Drehgeber
 - fix: Sprache wechsel, Inkremental Modul aktualisierung
-
+---
 ### **FW ver 0.8.2.3 / 19.11.2021: [download C1202.bin](https://github.com/k-szczeciak/C1202RelOpen/raw/master/0.8.2.3/C1202_FW_0.8.2.3.bin)**
 - neu: Module FW erkennung nach Modul typ - wird nur FW gezeigt der passt zum Modul
 - neu: neue Begriefe in Wuertebuch von Kartenspeicher behandlung fuer Datenausgang
@@ -54,7 +54,7 @@
   - upgrade: curvenanzeige anpassung fuer Zentrieren auf und Nennmass
 - neu: Japanisch detektion nach Artikelnummer: ***5312024***
 - neu: Japanisch Wuerterbuch Installiert nach Uebersetzung mit entsprechendem Font-upgrade (4Bk uebersetzung + 12kB Font)
-
+---
 ### **FW ver 0.8.2.2 / 12.11.2021: [download C1202.bin](https://github.com/k-szczeciak/C1202RelOpen/raw/master/0.8.2.2/C1202_FW_0.8.2.2.bin)**
 - upgrade: Graph visualisierug verbesserung: Digitalanzeige in vordegrung und positionierung
 - fix: Anzeigeart fuer Zeiger nicht geaendert wenn "Verschiedene" editiert sind
@@ -68,11 +68,11 @@
 - Zeiger Zentrieren auf Tolernaz dynamisch skala-Bezeichnung (min, max und mitte)
 - fix: Formel Bilnkende Pfeil
 - neu: Japanisch (ohne uebersetzung) eingefuehrt
-
+---
 ### **FW ver 0.8.2.1f / 04.11.2021: [download C1202.bin](https://github.com/k-szczeciak/C1202RelOpen/raw/master/0.8.2.1f/C1202_FW_0.8.2.1f.bin)**
 - Graph Inkremnetal Modul, Drehgeber. Grafikanzeige x10 behoben
 - Graph ikonen positionierung verbesserung:
-
+---
 ### **FW ver 0.8.2.1e / 04.11.2021: [download C1202.bin](https://github.com/k-szczeciak/C1202RelOpen/raw/master/0.8.2.1e/C1202_FW_0.8.2.1e.bin)**
 - speicher optimalisierung, alle 11 sprachen
 - Balken Zeiger Skala bearbeitung:
@@ -83,10 +83,10 @@
   - einstellung fuer Winkel 360 grad limitiert nur fuer Inkremental Modul und Drehgeber
   - Neue skalierung in Einrichten: minimale skala immer fuer HR-modul und Inkremental Modul
   - Maksimale skalierung in einrichtung limitiert fuer Inkremental Modul
-
+---
 ### **FW ver 0.8.2.1d / 29.10.2021: [download C1202.bin](https://github.com/k-szczeciak/C1202RelOpen/raw/master/0.8.2.1d/C1202_FW_0.8.2.1d.bin)**
 - scale 0.0001 added
-
+---
 ### **FW ver 0.8.2.1 / 29.10.2021: [download C1202.bin](https://github.com/k-szczeciak/C1202RelOpen/raw/master/0.8.2.1/C1202_FW_0.8.2.1.bin)**
 - SD-card komunikations verbesserung
   - vermeidung synchronisation fuer manche Karten
@@ -96,7 +96,7 @@
 - Fix: Falshe Markierung bei FW-update nach Werkseinstellung
 - fix: Datenausgabe zum SD Karte - Dritte Merkmal verschiebung
 - Scale fuer laenge: "mm" ind "um" erweitert.
-
+---
 ### **FW ver 0.8.2.0 / 21.10.2021: [download C1202.bin](https://github.com/k-szczeciak/C1202RelOpen/raw/master/0.8.2.0/C1202_FW_0.8.2.0.bin)**
 - inklusiv FW versionen: 0.8.1.9d, 0.8.1.9r, 0.8.1.9s
 - fix: Datenausgand mikro-SD karte - csv-Datei fuer Manuel und Senquentionel
@@ -104,7 +104,7 @@
 - laenger Dateinahmen sichtbar
 - FW update, backup ohne "_bak" Suffix
 - Rohwerte in Einrichten
-
+---
 ### **FW ver 0.8.1.8 / 15.10.2021: [download C1202.bin](https://github.com/k-szczeciak/C1202RelOpen/raw/master/0.8.1.8/C1202_FW_0.8.1.8.bin)**
 - drehgeber und "Ref. Punkte >1" aktiv ist
   - "Anzahl Ref. pro U." - nur wert "1" moeglich
@@ -112,7 +112,7 @@
   - "Anzahl Ref. pro U." - bei erste start geprueft und auf 1 gesetzt.
 - "Graph" Nennmass wird auf null beziehen
 - fix: "Graph" skalierung bei mehrerem Merkmaele
-
+---
 ### **FW ver 0.8.1.8d / 13.10.2021: [download C1202.bin](https://github.com/k-szczeciak/C1202RelOpen/raw/master/0.8.1.8d/C1202_FW_0.8.1.8d.bin)**
 - CSV-Detei mormatierung:
   - spalte einheit eingefügt
@@ -125,7 +125,7 @@
 - fix: Module FW update
 - fix: Kundenkorrektur plausibilität prüf änderung (if ( abs(calibMaxAct[actParaT] - calibMinAct[actParaT]) < abs(calibMax - calibMin) / **100** ))
 - fix: Englische Sprache: "Repeat Customer Calibration" & "Values are not valid"
-
+---
 ### **FW ver 0.8.1.7 / 07.10.2021: [download C1202.bin](https://github.com/k-szczeciak/C1202RelOpen/raw/master/0.8.1.7/C1202_FW_0.8.1.7.bin)**
 - SD-karte pruefung nur bei start und datenausgang
 - grafik-anzeige verbessert
@@ -134,7 +134,7 @@
 - masimal Dateinamelaenge 26-Zeichen
 - Modulen FW - update - aktuele parmater sind gespeichert
 - Linear-taster, umrechnung fuer mehrere referenzpunkte
-
+---
 ### **FW ver 0.8.1.6 / 01.10.2021: [download C1202.bin](https://github.com/k-szczeciak/C1202RelOpen/raw/master/0.8.1.6/C1202_FW_0.8.1.6.bin)**
 - Digimatic schnitstelle:
   - fix: negative werte
@@ -166,8 +166,7 @@
   - Jederpunkt in Grafik ist ein messung, Pufferlaenge 400 messungen = 4sekunden
 - fix, nach George Schutz, nahme fuer ein pneumatisches modul
 - andere kleine verbesserungen und optimierung
-  
-
+  ---
 ### **FW ver 0.8.1.5 / 10.09.2021: [download C1202.bin](https://github.com/k-szczeciak/C1202RelOpen/raw/master/0.8.1.5/C1202_FW_0.8.1.5.bin)**
 - Data anforderung verbesserung / stabilitaet:
   - empfangene Datei plausibilitaet pruefung (datei format, CRC-pruefung)
@@ -191,10 +190,10 @@
   - datei sind in spalten gespeichert
   - neudatei ist bei neu einschalten hoch gezaehlt
 - allgemeine optimierung
-
+---
 ### **FW ver 0.8.1.4A / 03.09.2021: [download C1202.bin](https://github.com/k-szczeciak/C1202RelOpen/raw/master/0.8.1.4A/C1202_FW_0.8.1.1A.bin)**
 - minor stability at 100Hz update
-
+---
 ### **FW ver 0.8.1.4 / 03.09.2021: [download C1202.bin](https://github.com/k-szczeciak/C1202RelOpen/raw/master/0.8.1.4/C1202_FW_0.8.1.4.bin)**
 - Inkremental modul Drehgeber, maximle Werte erhoehung in kleinere aufloesung bis +-19999.999 (ca. +-55 Umdreungen).
   - wert ist limitiert nach 32-bit wert (-2,147,483,648 <-> +2,147,483,647) nominiert in 10^5 grad (in versionen bis 0.8.1.3 10^6). Das gild nur fuer Inkremental drehgeber.
@@ -209,7 +208,7 @@
   - ohne referenzierung, Meister funktionieret genauso wie bei laenge
   - mit referenzierung, Meister bei jede Umdrehung wird zurueckgestzt
   - mit referenzierung und multiturn (anzahl referenzpunkte > 1 = 1): wird meister aktiv verschoben nach umdreung. In dise version funktioniert nur fuer positive werte.
-
+---
 ### **FW ver 0.8.1.3 / 27.08.2021: [download C1202.bin](https://github.com/k-szczeciak/C1202RelOpen/raw/master/0.8.1.3/C1202_FW_0.8.1.3.bin)**
 - fix: Inkremental sensor Parameter-> "Ref. punkte > 1" mit 3 Merkmale Gefrohene Werte problem behoben.
   - Werte plausibilitaet verbessert fuer 100Hz. Werte anforderung -> wenn neue werte sind erhalten, bearbeitung. unaphaengig von Anzeige
@@ -222,7 +221,7 @@
   - in einem fall wenn zeichen sind mehr als 8 letzte ziffer ist entfernt
   - fuer negative werte drucker zeigt 7 stellen statt 8
   - bei einheit aenderung oder prezision aenderung, drucker zeigt "POIN ERROR" oder "UNIT ERROR". nach quittung neue Werte werden ausgedruckt
-
+---
 ### **FW ver 0.8.1.2 / 20.08.2021: [download C1202.bin](https://github.com/k-szczeciak/C1202RelOpen/raw/master/0.8.1.2/C1202_FW_0.8.1.2.bin)**
 - phasenkorrektur speicher verbessert, nach dem korrekturablauf wird automatisch in modul gespeichert. Fuer das richtig zu funktionieren ein neues fw ist notwendig fuer inkremntalmodul, Version 1.15a 
 - Inkremental modul Paramater speicher verbessert
@@ -232,7 +231,7 @@
 - Sprache umstellung fuer alle paremeter  
 - Laengere Dateinamen fuer Modul programieren
 - speicher optimierung
-
+---
 ### **FW ver 0.8.1.1 / 13.08.2021: [download C1202.bin](https://github.com/k-szczeciak/C1202RelOpen/raw/master/0.8.1.1/C1202_FW_0.8.1.1.bin)**
 - Name "preparing for backup" auf "Creating Backup" geendert
 - Wueterbuch aktualisiert fuer FW update und inkremental modul, neue Begrife:
@@ -245,7 +244,7 @@
 - FW update Tasterhintengrund fuer neustart auf rot geendert
 - FW update, "Backup vorbereitung..." Fortschrittsanzeige
 - optimalisierung
-
+---
 ### **FW ver 0.8.1.0 / 16.07.2021: [download C1202.bin](https://github.com/k-szczeciak/C1202RelOpen/raw/master/0.8.1.0/C1202_FW_0.8.1.0.bin)**
 - Firmware Update Dateiname verlaengfert, Standart name: "C1200_FW_x.x.x.x.bin"
 - Fix: Inkremental Sensor Parameter: Speicher Ikone war nicht imme gueltig - korrigiert
@@ -255,7 +254,7 @@
 - Menue - name geendert: von "Tastatur / Menu sperre" fuer "Menue sperre"
 - Firmware Update ohne Datei loeschen - Dateiname nach aktualisierung bleibt ungeaendert
 - Firmware update: bevore Aktualisierung, wird Aktuele FW backup gemacht und auf SD-karte gespeichert under name: "C1202_FW_x.x.x.x_bak.bin"
-
+---
 ### **FW ver 0.8.0.9 / 16.07.2021: [download C1202.bin](https://github.com/k-szczeciak/C1202RelOpen/raw/master/0.8.0.9/C1202.bin)**
 - Einrichten neue Name: "SENSOR" statt "ABSOLUTE"
 - Inkremental modul - Parameter: Analoge werte mit Max Anzeige ("gitterkonstante", "ink. pro. Umdreh", "Anzahl Ref. pro U.", "Dist. zwisch. ref.")
@@ -288,7 +287,7 @@
   - nach dem langetsasterdruck wird restet drurgefuehrt
   - Taste 1 ist nur fuer bestrommung sicherheit
   - C1202.bin wird nicht in menu gezeigt
-
+---
 ### **FW ver 0.8.0.8 / 09.07.2021: [download C1202.bin](https://github.com/k-szczeciak/C1202RelOpen/raw/master/0.8.0.8/C1202.bin)**
 - fix - Inkrmentalmodul parameter in "Gitterkonstante", "Inkremente pro umdrehung", "Anzahl Ref. pro U." u. "Dist. zwisch. Ref." editierung mit maximale Werte verbessert
 - fuer induktive module gruenepunkt nicht blinkend
@@ -302,8 +301,7 @@
 - Werkseinstellung: modul wird nicht gefragt nach parametern die sind nicht modulrelevant, dadurch kein lesefehler wird nicht gezeigt
 - Messanzeige meldefenster management, bzw. Fehler meldungen
 - speicher optimalisierung
-
-
+---
 ### **FW ver 0.8.0.7 / 25.06.2021: [download C1202.bin](https://github.com/k-szczeciak/C1202RelOpen/raw/master/0.8.0.7/C1202.bin)**
 - Tolernaz und Warngrenzen fuer winkel in inkremental modul
 - optimisierung von Inkrementalmodul parameter behandlung entMultiPar() modul:
@@ -316,7 +314,7 @@
 - Zaehler reset in "Absolute" mode unter Taste 5
 - Name fuer Einrichten geaenderet nur fuer Inkremntal modul
 - Fix: induktivmessmodul: zeigt Messwerte und Referenzpunkt ist statisch
-
+---
 ### **FW ver 0.8.0.6 / 17.06.2021: [download C1202.bin](https://github.com/k-szczeciak/C1202RelOpen/raw/master/0.8.0.6/C1202.bin)**
 - fix: Kundekorrektur korrigiert (4-auswahl)
 - neu: Referenzpunkt logik angepasst
@@ -341,9 +339,7 @@
     - Fehelrhaftekanal wird gezeigt
     - normalarbeit nach fehlervermeidung (wenn meesmodul erlaubt)
     - fehlerbeschreibung und vermoetliche urhsache
-  
-
-
+---
 ### **FW ver 0.8.0.5 / 10.06.2021: [download C1202.bin](https://github.com/k-szczeciak/C1202RelOpen/raw/master/0.8.0.5/C1202.bin)**
 - fix von 0.7.9.0:
   - Werte plausiobilitaet proefung, keine Diskette u. blinkende Pfeil wenn werten sind nicht plausibel
@@ -366,8 +362,7 @@
   - fuer laenge: zusaezliche 30 mm, 
   - fuer winkel: zusaetzliche 360 Grad
 - andere fixen und verbesserungen
-
-
+---
 ### **FW ver 0.8.0.4 / 02.06.2021: [download C1202.bin](https://github.com/k-szczeciak/C1202RelOpen/raw/master/0.8.0.4/C1202.bin)**
 - inkrmental: linear werte lesen und zeigen
 - einfache diagnostic ueber MarCom (7 zaehler)
@@ -377,8 +372,7 @@
 - Inkremental modul Parameter: springen ueber ausgegeute Werte
 - Inkremental modul Parameter: Referenz punkte logik: erst muss Referenz Punkte bearbeitung aktiviert sein
 - INkremental Anzeige: blinkende Kreiss wenn Taster nicht referneziert ist
-
-
+---
 ### **FW ver 0.8.0.3 / 28.05.2021: [download C1202.bin](https://github.com/k-szczeciak/C1202RelOpen/raw/master/0.8.0.3/C1202.bin)**
 - demos fuer Geschwindigkeit und Umdrehungen entfernt
 - neues bedien konzept fuer Formel, Toleranz&Wangrenzen und 2P-Meister implementiert
@@ -391,7 +385,7 @@
   - "Messaufgabe" statisch ausgegraut und nicht editierbar.
   - kleine fixen
 - vorbereitunng fuer messwerte lesen
-
+---
 ### **FW ver 0.8.0.2 / 21.05.2021: [download C1202.bin](https://github.com/k-szczeciak/C1202RelOpen/raw/master/0.8.0.2/C1202.bin)**
 - bugfix - wizzard, kein einheit auswahl
 - N1702 VSS parameter lesen und zeigen
