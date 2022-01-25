@@ -1,5 +1,19 @@
 [all versions](https://github.com/k-szczeciak/C1202RelOpen)
 # Millimar Software C1202, Incremntal 
+### **FW ver 0.8.2.9 / 25.01.2022: [download C1202.bin](https://github.com/k-szczeciak/C1202RelOpen/raw/master/0.8.2.9/C1202_FW_0.8.2.9.bin)**
+- aktive parameter anzeige:
+  - parameter aenederung Anzeige mit "*"
+  - MarCom aktive datei uebertragung
+- parameter-Datei mit Beschreibung
+- fix: parameter anzahl bis 99 fuer gleiche 
+- folder zuordnung:
+  - /csv fuer csv-Datei
+  - /par fuer parameter-Datei
+  - /bmp fuer bildschirmkopie
+- Marcom Schnittstelle fuer Datei:
+  - unterordner Anfrage
+  - Datei-filtrierung
+
 ### **FW ver 0.8.2.8 / 13.01.2022: [download C1202.bin](https://github.com/k-szczeciak/C1202RelOpen/raw/master/0.8.2.8/C1202_FW_0.8.2.8.bin)**
 - x-mass Edition entfernt
 - Modul FW Evaluierung Verbesserung und Info-Seite
@@ -10,7 +24,7 @@
 - Inkremental Modul Fehler Quittierung von Messanzeige
 - Wörterbuch update
 - Meldungsfenster Verbesserungen
-  ---
+---
 ### **FW ver 0.8.2.7 / 24.12.2021: [download C1202.bin](https://github.com/k-szczeciak/C1202RelOpen/raw/master/0.8.2.7/C1202_FW_0.8.2.7.bin)**
 - Drehgeber mit Referenzpunt Fix fuer Extreme Werte (Min, Max)
 - Faktor auch fuer Inkrementale module.
