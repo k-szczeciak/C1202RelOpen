@@ -1,5 +1,12 @@
 [all versions](https://github.com/k-szczeciak/C1202RelOpen)
 # Millimar Software C1202, Incremntal 
+### **FW ver 0.8.3.0 / 28.01.2022: [download C1202.bin](https://github.com/k-szczeciak/C1202RelOpen/raw/master/0.8.3.0/C1202_FW_0.8.3.0.bin)**
+- fix: Meister fuer Drehgeber und referenzpunktbearbeitung. Nur relevanten kanal wird zuruckgesetzt
+- upgrade: erweitere information fuer Parameter-datei verbessert
+- update: Wuerterbuch Deutsch
+- update: Wuerterbuch FR und CN - nicht gezeigte Nachrichten in Kundenkorrektur durchfuehrung
+- fix: falsche Erste anzeige fuer aktive Korrektur in menu
+
 ### **FW ver 0.8.2.9 / 25.01.2022: [download C1202.bin](https://github.com/k-szczeciak/C1202RelOpen/raw/master/0.8.2.9/C1202_FW_0.8.2.9.bin)**
 - aktive parameter anzeige:
   - parameter aenederung Anzeige mit "*"
