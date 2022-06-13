@@ -1,12 +1,169 @@
 [all versions](https://github.com/k-szczeciak/C1202RelOpen)
 # Millimar Software C1202, Incremntal 
+### **FW ver 0.8.4.3 / 02.06.2022: [download C1202.bin](https://github.com/k-szczeciak/C1202RelOpen/raw/master/0.8.4.3/C1202_FW_0.8.4.3.bin)**
+-	fix: Inkrementalmodul Parameter
+-	fix: entTxt Titel länge Anpassung
+-	MarCom "MSG=...$0G" Befehl endlos Zeit Nachricht eingeführt
+-	fix: Datei-Änderung verbessert
+-	Sprache Aktualisierung - Französisch
+
+### **FW ver 0.8.4.2 / 25.05.2022: [download C1202.bin](https://github.com/k-szczeciak/C1202RelOpen/raw/master/0.8.4.2/C1202_FW_0.8.4.2.bin)**
+-	MarCom Schnittstelle verbessert: jetzt für anfrage für mehrere Werte (z.B. „TOL?“)  nach jede ‘;‘ wird Befehl widerholt, z.B. „TOL1 …“
+- 	Fix: werte Mappings für Anfrage angepasst
+-	Bildschirmkopie in Messbild Anzeige:
+- 	Wird automatisch angepasst
+-	Graph Anzeige mit Toleranz und Warngrenzen Fläche verbessert:
+  - Getestet mit Toleranz, Toleranz mit Warngrenzen, Skalierung und Zentrieren auf Nennmaß oder Toleranz
+-	Messanzeige: Zeiger: Skalierung Weiße Linie entfernt
+-	Sprache und Font update. Nur FR, PT und ES sind nicht vollständig übersetzt
+-	Messanzeige Verbesserungen:
+  -	Graph: Digital anzeige Vertikal Positionierung:
+  -	Graph und Digital: Weisses Strich in Tolernz aktiv entfent 
+  -	Andere
+
+### **FW ver 0.8.4.1 / 20.05.2022: [download C1202.bin](https://github.com/k-szczeciak/C1202RelOpen/raw/master/0.8.4.1/C1202_FW_0.8.4.1.bin)**
+-	fix: Messanzeige Toleranz und Warngrenzen Anzeige in Balken und Zeiger - nicht sichtbar wen außer Skalierung
+-	upgrade: wenn keine Sprache installiert ist, nur Kurtz druck für Sprache Installierung ist nötig
+-	upgrade: Bildschirmkopie Aktivierung Anzeige mit Ikone:    Sichtbar überall außerdem Messanzeige	
+-	fix: nach Werkseinstellungen Installierte Sprache ist verfügbar und Auswahl in Wizzard (Sprache Installierung Option in Wizzard nicht möglich)
+-	fix: Messanzeige Einheit nicht sichtbar - behoben
+-	update Sprachen: DE, EN, PT, ES, 
+-	MarCom update:
+  - "?" immer alle 3 Merkmale mit entsprechendem Fehler anzeige: z.B.: "1 0.000 mm;2 ERR6;3 ERR6" ERR6 - Merkmal nicht verfügbar , ERR5 - Messung nicht gültig (z.B. Sensor nicht angeschlossen), ERR3 - Messung nicht verfügbar, z.B. 2P-messung läuft
+  - "Mx?" ohne Merkmalnummer Bezeichnung,
+  - "TOL?", "TOLW?", "NOMINAL?", "MASTER?" umgeordnet und mit ";" Trennung
+  - neue befehle: "TOLx?", "TOLWx?", "NOMINALx?", "MASTERx?" für Einzelmerkmal anfrage
+  - Schreibfunktionen: "TOLx", "TOLWx", "NOMINALx", "MASTERx", Antwort ohne Werte-Bestätigung, Bestätigung nur mit Befehl, z.B.: "TOL1/r"
+  - "ID?" Antwort umstrukturiert, Beispiel: "ID1 T 005312025 S 00010000;ID2 T 5331161 S 00000000"
+  - "DES?" Antwort umstrukturiert, Beispiel: "DES1 Mahr Millimar C1202;DES2 N 1702 VSS" 
+  - "VER?" Antwort umstrukturiert, Beispiel: "VER1 0.8.4.1;VER2 V1.1.5a" 
+  - Neue Befehle: "BRAND_<BRAND>_1861" und "DEVICE_<DEVICE>_1861":
+    - BRAND und DEVICE sind maximal 10 Zeichen breit (ASCII nur)
+    - BRAND und DEVICE sind intern in Eeprom gespeichert
+    - BRAND und DEVICE sind einstellen möglich nur wenn keine bekannte Artikelnummer eingestellt ist. Tabelle ist automatsch generiert und intern gespeichert in FW): 
+    - Um BRAND und DEVICE zu einstellen Artikel Nummer muss erst eingestellt außer Liste sein
+    - wenn Artikel Nummer zurück zum Artikel von liste eingestellt ist, eingestellte DEVICE und BRAND wird gelöscht
+    - es ist möglich BRAND und DEVICE löschen mit Befehl: "BRAND_1861" oder "DEVICE_1861"
+    - Wenn BRAND oder DEVICE nicht eingestellt oder gelöscht ist, dann Standardwerte sind übernehmen: für DEVICE: "Millimar C1202", fuer Brand: "Mahr"
+    - es ist möglich Leer BRAND oder DEVICE machen mit Befehl: "BRAND__1861" oder "DEVICE__1861" (Doppel Leerzeichen)
+    - Antwort für Befehl "DES?" ist folgendes: Standard: "DES1 Mahr Millimar C1202;DES2 N 1702 VSS", mit Brand und Device: "DES1 MyBrand MyDevice;DES2 N 1702 VSS", nur Brand: "DES1 MyBrand;DES2 N 1702 VSS", nur Device: "DES1 MyBrand;DES2 N 1702 VSS"
+    - Eingestellte BRAND und DEVICE wird in Info-seite gezeigt, in MarCom, in CSV-Datei, und Start -Bild:
+
+### **FW ver 0.8.4.0 / 12.05.2022: [download C1202.bin](https://github.com/k-szczeciak/C1202RelOpen/raw/master/0.8.4.0/C1202_FW_0.8.4.0.bin)**
+-	fix: Inkremental Module Parameter Fix (falscher Font für Werte)
+-	fix: Fehlende Zeichen in Standardfont
+-	fix: Font Anpassung in Formel - fehlende Zeichen.
+-	update: Sprache Auswahl
+  -	"(Sprache installieren)" jetzt in ausgewählte Sprache und einsprechenden Font, anderes als installierte Sprache
+  -	Trennung der Name und "()"
+-	fix: Zeiger und Balken Anzeige in außerhalb Scala behoben
+-	Dateiliste Anzeige (Parameter, FW update, Messdaten):
+  -	fix: mehrere Seiten Bewegung mit Tasten 4 und 5 Rückgang moeglich
+  -	neu: Lange tastedrueck Tasten 4 und 5 Seitensprung
+  -	neu: unabhängig von installierter Sprache und Font, Dateinahmen immer in Standartfont gezeigt
+  -	neu: Schriftausrichtung links statt mittel
+-	MarCom Befehlssatz update:
+  -	Mx? ohne Merkmalnummer
+  -	TOL? Antwort mit TOL1...
+  -	TOLx? implementiert
+  -	TOLW? Antwort mit TOLW1...
+
+### **FW ver 0.8.3.9 / 1.05.2022: [download C1202.bin](https://github.com/k-szczeciak/C1202RelOpen/raw/master/0.8.3.9/C1202_FW_0.8.3.9.bin)**
+- INtsalierbare sprachen, Version wo Font für Menue->Formel->Funktion Auswahl implementiert ist.
+  2 Font-Sätze werden bei Sprache Installierung implementiert.
+
+### **FW ver 0.8.3.8a / 28.01.2022: [download C1202.bin](https://github.com/k-szczeciak/C1202RelOpen/raw/master/0.8.3.8a/C1202_FW_0.8.3.8a.bin)**
+- Version mit 7 sprachen(DE, CN, CZ, EN, FR, IT, PL)
+  fehlt noch 4 sprachen(PT, RU, ES, SE)
+
+### **FW ver 0.8.3.8 / 29.04.2022: [download C1202.bin](https://github.com/k-szczeciak/C1202RelOpen/raw/master/0.8.3.8/C1202_FW_0.8.3.8.bin)**
+-	"EER7 - Menue aktiv" wird ersetzt mit "EER3 - Auftrag kann nicht ausgeführt werden" 
+-	"ERR5 - Daten unvollständig" Korrektur, allein ohne Merkmal Nummer, 
+-	fix: Marcom,  Zeitgesteuerte Messung:  wenn Modulfehler, "START"-befehl ist nicht möglich
+-	Installierte Sprache wird am Start:
+  -	Installierte Font wird geprüft ob gültig ist
+  -	Installierte Wörterbuch wird, geprüft ob gültig ist
+  -	Wenn Installierte Sprache nicht gültig ist und Installierte Sprache aktive ist, Wizzard wird ausgeführt.
+  -	Bei neu FW update, und aktives Installierte Sprache, Wizzard wird ausgeführt
+  -	Wenn Installierte Sprache nicht gueltig ist, diese option wir nicht in wizzard gezeigt
+  -	Wenn INstallierte Sprache gueltich ist, diese option wird gezeigt
+-	"Checkbox unchecked" und "Checkbox checked" wird in getrennten Font benutzt statt Standard Microsoft YaHei - sichtbar in installierte Sprache
+-	Umsetzung "/x0A" oder "/r" von Text String zu ASCII wert bei Sprache Installierung
+-	Bei Sprache Installierung Version von Datei und aktuellen FW geprüft werden (in diese Version 3 erste nummern, letzte wird nicht geprüft)
+-	Formel-->Funktion Auswahl bei Installierte Sprache englische Wörterbuch wird benutzt
+
+### **FW ver 0.8.3.7b / 22.04.2022: [download C1202.bin](https://github.com/k-szczeciak/C1202RelOpen/raw/master/0.8.3.7b/C1202_FW_0.8.3.7b.bin)**
+- linie und Fette linie
+
+### **FW ver 0.8.3.7a / 22.04.2022: [download C1202.bin](https://github.com/k-szczeciak/C1202RelOpen/raw/master/0.8.3.7a/C1202_FW_0.8.3.7a.bin)**
+- version wo in Graph/Füll Warngrenzen implementiert sind
+
+### **FW ver 0.8.3.7 / 22.04.2022: [download C1202.bin](https://github.com/k-szczeciak/C1202RelOpen/raw/master/0.8.3.7/C1202_FW_0.8.3.7.bin)**
+-	fix: FW upgrade falsche Datei richtige Datei übernehmen würde,
+-	geprüft: Artikelnummer bei Neugerät würde 5312025 automatisch gesetzt (Serialnummer 00000000), wenn keine andere ist geschrieben
+-	Wizzard Seite Tastenbeschreibung korrigiert (Flasche USB-Schnittstelle und blinkende "Ausgang" Taste)
+-	Sprache instalation:
+  -	Sprachedatei geprüft nach Anzahl Einträge (wenn sprach Datei hat wenige eintrage, fehlende werden mit "no entry" automatisch nachgefühlt)
+  -	Sprachdatei nach Version Nummer geprüft
+  -	Sprachdatei wird nach Font geprüft
+  -	Sprachdatei wird nach Checksumme (MD5 hash wird berechnet und vergleicht mit gespeicherte)
+  -	Checksumme wird mit "Saltz" gepflegt.  Zusammen mit Hash wirkt als ein Digitales Unterschrift für sprach Datei.
+  -	"Ungültige Datei" Fenster wird gezeigt, wenn Prüfung nicht positiv abgelaufen ist.
+-	Graph Anzeige, für Modus verbessert (Warngrenzen immer noch nicht implementiert in diese Modi)
+
+### **FW ver 0.8.3.6 / 8.04.2022: [download C1202.bin](https://github.com/k-szczeciak/C1202RelOpen/raw/master/0.8.3.6/C1202_FW_0.8.3.6.bin)**
+-	Graph anzeige Beispiele:
+-	Menü:
+  -	Pixel (Standard bis letzte Version)
+  - Pixel Fett (3pixel) 
+  - Linie
+  - line Fett (3 pixel)
+  - Füll
+
+### **FW ver 0.8.3.5 / 01.04.2022: [download C1202.bin](https://github.com/k-szczeciak/C1202RelOpen/raw/master/0.8.3.5/C1202_FW_0.8.3.5.bin)**
+-	Letzte Listenposition Anzeige in Menü - jetzt sichtbar
+-	speicher optimiert und reduziert
+-	Sprache Installieren:
+  -	Sprache wird mit eigenem Font installiert
+  -	 automatische installierte Sprache Übernahme
+  -	nach werkseinstellung, Installierte Sprache wird aktiv
+  -	Neuer Font aktiv global (außer Formel-Funktion Auswahl)
+
+### **FW ver 0.8.3.4 / 18.03.2022: [download C1202.bin](https://github.com/k-szczeciak/C1202RelOpen/raw/master/0.8.3.4/C1202_FW_0.8.3.4.bin)**
+-	Millimar Tool Upload sicher
+-	scrollen in listen im kreiß
+-	listen Anzeige verbessert (Antwort Zeit)
+-	installierbare Sprachen:
+  -	Datei Name: ".lng"
+  -	Menue Sprache, letzte Zeile: installieren mit Lange Tastendruck, Auswahl mit Kurze Tastendruck
+  -	Wörterbuch wird auf Flash kopiert (256 positionen moeglich, 183 in version 0.8.3.4 belegt, 8kB) 
+  -	Datei löschen nicht möglich
+
+### **FW ver 0.8.3.3 / 11.03.2022: [download C1202.bin](https://github.com/k-szczeciak/C1202RelOpen/raw/master/0.8.3.3/C1202_FW_0.8.3.3.bin)**
+-	fix: Parameterdatei entfernen 
+-	keine Datei Auswahl und Pfeil-navigation Verbesserung
+-	FW update Datei Prüfung Verbesserung (Backup Datei Update möglich)
+-	Upload Verarbeitung
+
+### **FW ver 0.8.3.2 / 25.02.2022: [download C1202.bin](https://github.com/k-szczeciak/C1202RelOpen/raw/master/0.8.3.2/C1202_FW_0.8.3.2.bin)**
+-	Sprache update für PL, EN und DE
+-	Datei Upload fortschrittanzeige
+-	Datei unterladen Anzeigefenster
+-	MarCom: Datei Liste mit Beschreibung und Dateigröße
+-	MarCom: Datei-empfangen für Byte-datei erweitert
+-	Sprache Installierung von SD-Karte - Menü Auswahl nur.
+  -	Sprache Datei Beispiel im Anhang
+
+### **FW ver 0.8.3.1 / 18.02.2022: [download C1202.bin](https://github.com/k-szczeciak/C1202RelOpen/raw/master/0.8.3.1/C1202_FW_0.8.3.1.bin)**
+- updtae für MillimarTool
+
 ### **FW ver 0.8.3.0 / 28.01.2022: [download C1202.bin](https://github.com/k-szczeciak/C1202RelOpen/raw/master/0.8.3.0/C1202_FW_0.8.3.0.bin)**
 - fix: Meister fuer Drehgeber und referenzpunktbearbeitung. Nur relevanten kanal wird zuruckgesetzt
 - upgrade: erweitere information fuer Parameter-datei verbessert
 - update: Wuerterbuch Deutsch
 - update: Wuerterbuch FR und CN - nicht gezeigte Nachrichten in Kundenkorrektur durchfuehrung
 - fix: falsche Erste anzeige fuer aktive Korrektur in menu
-
+  
 ### **FW ver 0.8.2.9 / 25.01.2022: [download C1202.bin](https://github.com/k-szczeciak/C1202RelOpen/raw/master/0.8.2.9/C1202_FW_0.8.2.9.bin)**
 - aktive parameter anzeige:
   - parameter aenederung Anzeige mit "*"
